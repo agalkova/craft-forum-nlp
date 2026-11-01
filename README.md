@@ -1,5 +1,7 @@
 # Craft Forum Discourse Classification
 
+[![Tests](https://github.com/agalkova/craft-forum-nlp/actions/workflows/ci.yml/badge.svg)](https://github.com/agalkova/craft-forum-nlp/actions/workflows/ci.yml)
+
 Craft Forum NLP is a small benchmark for classifying how people participate in art and craft forums. It distinguishes technical help, showcase reactions, critique, and broader opinion.
 
 The main question is whether a model trained on a small labeled dataset can generalize to conversations it has never seen. To test that, all posts from the same forum thread stay in the same split.
