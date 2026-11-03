@@ -89,6 +89,18 @@ pytest
 
 The tests validate the dataset, prevent source-thread overlap, check deterministic split assignment, and compare the lightweight benchmark against the published metrics. GitHub Actions runs the tests and a benchmark smoke test on every pull request.
 
+## Code path
+
+The benchmark runs in five steps:
+
+1. [`data.py`](src/craft_forum_nlp/data.py) validates the CSV and its four labels.
+2. [`splits.py`](src/craft_forum_nlp/splits.py) assigns whole source threads to train, validation, or test.
+3. [`models.py`](src/craft_forum_nlp/models.py) evaluates the majority and TF–IDF baselines.
+4. [`transformer.py`](src/craft_forum_nlp/transformer.py) fine-tunes the two DistilBERT variants using the same held-out threads.
+5. [`reporting.py`](src/craft_forum_nlp/reporting.py) writes metrics, predictions, metadata, and the comparison figure.
+
+[`benchmark.py`](src/craft_forum_nlp/benchmark.py) is the coordinator. It contains no model logic; it loads the data, requests the split, runs the selected models, and passes their outputs to the reporter.
+
 ## Repository layout
 
 ```text
