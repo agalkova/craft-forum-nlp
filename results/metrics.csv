@@ -1,5 +1,5 @@
-model,accuracy,macro_f1,weighted_f1
-majority,0.432432,0.150943,0.261091
-tfidf_logistic_regression,0.405405,0.309975,0.368755
-distilbert,0.432432,0.150943,0.261091
-distilbert_weighted,0.216216,0.171770,0.154610
+model,accuracy,macro_f1,weighted_f1,fold_macro_f1_min,fold_macro_f1_max
+majority,0.410377,0.145485,0.238815,0.131579,0.164062
+tfidf_logistic_regression,0.396226,0.363419,0.392312,0.303030,0.423730
+distilbert,0.410377,0.145485,0.238815,0.131579,0.164062
+distilbert_weighted,0.349057,0.317837,0.297629,0.190975,0.458333

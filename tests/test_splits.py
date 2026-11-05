@@ -1,50 +1,54 @@
-from craft_forum_nlp.data import LABELS, load_data
-from craft_forum_nlp.splits import make_thread_held_out_splits
+import pandas as pd
+
+from craft_forum_nlp.data import load_data
+from craft_forum_nlp.splits import CV_RANDOM_STATE, OUTER_SPLITS, make_outer_folds
 
 
-def test_splits_are_disjoint_and_complete():
+def test_outer_folds_are_grouped_disjoint_and_complete():
     frame = load_data("craft_forum_dataset.csv")
-    splits = make_thread_held_out_splits(frame)
+    folds = make_outer_folds(frame)
+    held_out_ids = []
+    held_out_threads = []
 
-    ids = [set(part["id"]) for part in splits.as_dict().values()]
-    sources = [set(part["source_url"]) for part in splits.as_dict().values()]
+    assert len(folds) == OUTER_SPLITS == 5
+    assert CV_RANDOM_STATE == 42
+    for fold in folds:
+        train_threads = set(fold.train["source_url"])
+        test_threads = set(fold.test["source_url"])
+        assert train_threads.isdisjoint(test_threads)
+        held_out_ids.extend(fold.test["id"])
+        held_out_threads.extend(test_threads)
 
-    assert sum(map(len, ids)) == len(frame)
-    assert set.union(*ids) == set(frame["id"])
-    assert all(ids[i].isdisjoint(ids[j]) for i in range(3) for j in range(i + 1, 3))
-    assert all(
-        sources[i].isdisjoint(sources[j])
-        for i in range(3)
-        for j in range(i + 1, 3)
-    )
-
-
-def test_each_split_contains_every_label():
-    splits = make_thread_held_out_splits(load_data("craft_forum_dataset.csv"))
-
-    for frame in splits.as_dict().values():
-        assert set(frame["label"]) == set(LABELS)
+    assert len(held_out_ids) == len(set(held_out_ids)) == len(frame)
+    assert set(held_out_ids) == set(frame["id"])
+    assert len(held_out_threads) == len(set(held_out_threads))
+    assert set(held_out_threads) == set(frame["source_url"])
 
 
-def test_split_assignment_is_stable_when_input_order_changes():
+def test_fold_assignment_is_stable_when_input_order_changes():
     frame = load_data("craft_forum_dataset.csv")
-    expected = make_thread_held_out_splits(frame)
-    shuffled = frame.sample(frac=1, random_state=99).reset_index(drop=True)
-    actual = make_thread_held_out_splits(shuffled)
+    expected = make_outer_folds(frame)
+    reversed_frame = frame.iloc[::-1].reset_index(drop=True)
+    actual = make_outer_folds(reversed_frame)
 
-    for name in expected.as_dict():
-        assert list(expected.as_dict()[name]["id"]) == list(actual.as_dict()[name]["id"])
+    for expected_fold, actual_fold in zip(expected, actual, strict=True):
+        assert expected_fold.number == actual_fold.number
+        assert list(expected_fold.test["id"]) == list(actual_fold.test["id"])
 
 
-def test_current_split_sizes_and_thread_counts_are_recorded():
-    splits = make_thread_held_out_splits(load_data("craft_forum_dataset.csv"))
+def test_saved_fold_assignments_cover_each_thread_once_without_overlap():
+    frame = load_data("craft_forum_dataset.csv")
+    assignments = pd.read_csv("results/fold_assignments.csv")
 
-    assert {name: len(frame) for name, frame in splits.as_dict().items()} == {
-        "train": 140,
-        "validation": 35,
-        "test": 37,
-    }
-    assert {
-        name: frame["source_url"].nunique()
-        for name, frame in splits.as_dict().items()
-    } == {"train": 19, "validation": 5, "test": 4}
+    assert len(assignments) == len(frame)
+    assert assignments["id"].is_unique
+    assert set(assignments["id"]) == set(frame["id"])
+    assert assignments.groupby("source_url")["fold"].nunique().eq(1).all()
+
+    all_threads = set(frame["source_url"])
+    for fold_number in sorted(assignments["fold"].unique()):
+        test_threads = set(
+            assignments.loc[assignments["fold"].eq(fold_number), "source_url"]
+        )
+        train_threads = all_threads.difference(test_threads)
+        assert train_threads.isdisjoint(test_threads)

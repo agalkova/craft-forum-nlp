@@ -8,10 +8,17 @@ import pandas as pd
 
 from craft_forum_nlp.data import LABELS
 from craft_forum_nlp.models import ModelResult, score_predictions
+from craft_forum_nlp.splits import CV_RANDOM_STATE
 
 
 MODEL_NAME = "distilbert-base-uncased"
 MODEL_REVISION = "12040accade4e8a0f71eabdb258fecc2e7e948be"
+DISTILBERT_EPOCHS = 3
+LEARNING_RATE = 2e-5
+WEIGHT_DECAY = 0.01
+TRAIN_BATCH_SIZE = 16
+TEST_BATCH_SIZE = 32
+MAX_LENGTH = 256
 
 
 @dataclass
@@ -32,8 +39,6 @@ def evaluate_distilbert(
     development: pd.DataFrame,
     test: pd.DataFrame,
     *,
-    epochs: int = 3,
-    seed: int = 42,
     class_weighted: bool = False,
 ) -> tuple[ModelResult, list[dict[str, float]]]:
     try:
@@ -50,9 +55,9 @@ def evaluate_distilbert(
             "Install the transformer dependencies with pip install -e '.[transformer]'"
         ) from error
 
-    random.seed(seed)
-    np.random.seed(seed)
-    torch.manual_seed(seed)
+    random.seed(CV_RANDOM_STATE)
+    np.random.seed(CV_RANDOM_STATE)
+    torch.manual_seed(CV_RANDOM_STATE)
     torch.use_deterministic_algorithms(True)
 
     device = torch.device("cpu")
@@ -64,7 +69,7 @@ def evaluate_distilbert(
         encodings = tokenizer(
             frame["text"].tolist(),
             truncation=True,
-            max_length=256,
+            max_length=MAX_LENGTH,
         )
         return _EncodedDataset(
             encodings=encodings,
@@ -73,10 +78,13 @@ def evaluate_distilbert(
 
     collator = DataCollatorWithPadding(tokenizer=tokenizer, return_tensors="pt")
     train_loader = DataLoader(
-        encode(development), batch_size=16, shuffle=True, collate_fn=collator
+        encode(development),
+        batch_size=TRAIN_BATCH_SIZE,
+        shuffle=True,
+        collate_fn=collator,
     )
     test_loader = DataLoader(
-        encode(test), batch_size=32, shuffle=False, collate_fn=collator
+        encode(test), batch_size=TEST_BATCH_SIZE, shuffle=False, collate_fn=collator
     )
     model = AutoModelForSequenceClassification.from_pretrained(
         MODEL_NAME,
@@ -96,8 +104,10 @@ def evaluate_distilbert(
             dtype=torch.float32,
             device=device,
         )
-    optimizer = torch.optim.AdamW(model.parameters(), lr=2e-5, weight_decay=0.01)
-    total_steps = epochs * len(train_loader)
+    optimizer = torch.optim.AdamW(
+        model.parameters(), lr=LEARNING_RATE, weight_decay=WEIGHT_DECAY
+    )
+    total_steps = DISTILBERT_EPOCHS * len(train_loader)
     scheduler = get_linear_schedule_with_warmup(
         optimizer,
         num_warmup_steps=min(10, total_steps // 5),
@@ -117,7 +127,7 @@ def evaluate_distilbert(
         return np.array([id_to_label[index] for index in output])
 
     history = []
-    for epoch in range(1, epochs + 1):
+    for epoch in range(1, DISTILBERT_EPOCHS + 1):
         model.train()
         running_loss = 0.0
         for batch in train_loader:
@@ -151,11 +161,13 @@ def evaluate_distilbert(
             {
                 "model": MODEL_NAME,
                 "revision": MODEL_REVISION,
-                "epochs": epochs,
-                "learning_rate": 2e-5,
-                "batch_size": 16,
-                "max_length": 256,
-                "seed": seed,
+                "epochs": DISTILBERT_EPOCHS,
+                "learning_rate": LEARNING_RATE,
+                "weight_decay": WEIGHT_DECAY,
+                "train_batch_size": TRAIN_BATCH_SIZE,
+                "test_batch_size": TEST_BATCH_SIZE,
+                "max_length": MAX_LENGTH,
+                "seed": CV_RANDOM_STATE,
                 "device": str(device),
                 "class_weighted_loss": class_weighted,
                 "training_rows": len(development),

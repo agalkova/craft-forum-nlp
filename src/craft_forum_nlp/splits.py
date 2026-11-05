@@ -6,87 +6,73 @@ import pandas as pd
 from sklearn.model_selection import StratifiedGroupKFold
 
 
+CV_RANDOM_STATE = 42
+OUTER_SPLITS = 5
+INNER_SPLITS = 4
+
+
 @dataclass(frozen=True)
-class DatasetSplits:
+class ThreadFold:
+    number: int
     train: pd.DataFrame
-    validation: pd.DataFrame
     test: pd.DataFrame
 
-    def as_dict(self) -> dict[str, pd.DataFrame]:
-        return {
-            "train": self.train,
-            "validation": self.validation,
-            "test": self.test,
-        }
+
+def make_outer_folds(frame: pd.DataFrame) -> tuple[ThreadFold, ...]:
+    """Create five deterministic evaluation folds without selecting among them."""
+    return _make_thread_folds(frame, n_splits=OUTER_SPLITS)
 
 
-def _representative_fold(
+def make_inner_folds(frame: pd.DataFrame) -> tuple[ThreadFold, ...]:
+    """Create grouped folds for model selection inside an outer training set."""
+    return _make_thread_folds(frame, n_splits=INNER_SPLITS)
+
+
+def _make_thread_folds(
     frame: pd.DataFrame,
     *,
     n_splits: int,
-    random_state: int,
-) -> tuple[pd.Index, pd.Index]:
-    """Choose the fold closest to the full dataset's size and label mix."""
+) -> tuple[ThreadFold, ...]:
+    frame = frame.sort_values("id").reset_index(drop=True)
     splitter = StratifiedGroupKFold(
         n_splits=n_splits,
         shuffle=True,
-        random_state=random_state,
+        random_state=CV_RANDOM_STATE,
     )
-    overall = frame["label"].value_counts(normalize=True)
-    target_fraction = 1 / n_splits
-
-    candidates = []
-    for fold_number, (remainder_idx, held_out_idx) in enumerate(
-        splitter.split(frame, frame["label"], groups=frame["source_url"])
-    ):
-        held_out = frame.iloc[held_out_idx]
-        distribution = held_out["label"].value_counts(normalize=True)
-        distribution = distribution.reindex(overall.index, fill_value=0)
-        label_distance = float((distribution - overall).abs().sum())
-        size_distance = abs(len(held_out) / len(frame) - target_fraction)
-        candidates.append(
-            (label_distance + size_distance, fold_number, remainder_idx, held_out_idx)
+    folds = tuple(
+        ThreadFold(
+            number=fold_number,
+            train=frame.iloc[train_idx].reset_index(drop=True),
+            test=frame.iloc[test_idx].reset_index(drop=True),
         )
-
-    _, _, remainder_idx, held_out_idx = min(candidates, key=lambda item: item[:2])
-    return pd.Index(remainder_idx), pd.Index(held_out_idx)
-
-
-def make_thread_held_out_splits(frame: pd.DataFrame) -> DatasetSplits:
-    """Create deterministic train, validation, and test sets grouped by thread."""
-    frame = frame.sort_values("id").reset_index(drop=True)
-    train_validation_idx, test_idx = _representative_fold(
-        frame,
-        n_splits=6,
-        random_state=42,
+        for fold_number, (train_idx, test_idx) in enumerate(
+            splitter.split(frame, frame["label"], groups=frame["source_url"]),
+            start=1,
+        )
     )
-    train_validation = frame.iloc[train_validation_idx].reset_index(drop=True)
-    train_idx, validation_idx = _representative_fold(
-        train_validation,
-        n_splits=5,
-        random_state=43,
-    )
-
-    splits = DatasetSplits(
-        train=train_validation.iloc[train_idx].reset_index(drop=True),
-        validation=train_validation.iloc[validation_idx].reset_index(drop=True),
-        test=frame.iloc[test_idx].reset_index(drop=True),
-    )
-    _validate_split_integrity(splits)
-    return splits
+    _validate_folds(frame, folds)
+    return folds
 
 
-def _validate_split_integrity(splits: DatasetSplits) -> None:
-    frames = splits.as_dict()
-    all_ids: set[int] = set()
-    all_sources: set[str] = set()
+def _validate_folds(frame: pd.DataFrame, folds: tuple[ThreadFold, ...]) -> None:
+    expected_ids = set(frame["id"])
+    expected_threads = set(frame["source_url"])
+    test_ids: list[int] = []
+    test_threads: list[str] = []
 
-    for name, frame in frames.items():
-        ids = set(frame["id"])
-        sources = set(frame["source_url"])
-        if all_ids.intersection(ids):
-            raise ValueError(f"Rows overlap before the {name} split")
-        if all_sources.intersection(sources):
-            raise ValueError(f"Source threads overlap before the {name} split")
-        all_ids.update(ids)
-        all_sources.update(sources)
+    for fold in folds:
+        train_ids = set(fold.train["id"])
+        held_out_ids = set(fold.test["id"])
+        train_threads = set(fold.train["source_url"])
+        held_out_threads = set(fold.test["source_url"])
+        if train_ids.intersection(held_out_ids):
+            raise ValueError(f"Rows overlap in fold {fold.number}")
+        if train_threads.intersection(held_out_threads):
+            raise ValueError(f"Source threads overlap in fold {fold.number}")
+        test_ids.extend(fold.test["id"].tolist())
+        test_threads.extend(fold.test["source_url"].drop_duplicates().tolist())
+
+    if len(test_ids) != len(set(test_ids)) or set(test_ids) != expected_ids:
+        raise ValueError("Each row must appear in exactly one outer test fold")
+    if len(test_threads) != len(set(test_threads)) or set(test_threads) != expected_threads:
+        raise ValueError("Each source thread must appear in exactly one outer test fold")

@@ -15,7 +15,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 
 from craft_forum_nlp.data import LABELS
 from craft_forum_nlp.models import ModelResult
-from craft_forum_nlp.splits import DatasetSplits
+from craft_forum_nlp.splits import CV_RANDOM_STATE, OUTER_SPLITS, ThreadFold
 
 
 DISPLAY_NAMES = {
@@ -30,39 +30,75 @@ def _sha256(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
+def _evaluation_frame(folds: tuple[ThreadFold, ...]) -> pd.DataFrame:
+    return pd.concat(
+        [fold.test.assign(fold=fold.number) for fold in folds],
+        ignore_index=True,
+    )
+
+
 def write_results(
     output_dir: Path,
     dataset_path: Path,
-    splits: DatasetSplits,
+    folds: tuple[ThreadFold, ...],
     results: list[ModelResult],
+    per_fold_results: dict[str, list[ModelResult]],
     details: dict[str, object],
 ) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
+    evaluation = _evaluation_frame(folds)
 
-    metrics = pd.DataFrame(
-        [
+    metric_rows = []
+    fold_metric_rows = []
+    for result in results:
+        fold_results = per_fold_results[result.name]
+        fold_scores = [item.macro_f1 for item in fold_results]
+        metric_rows.append(
             {
                 "model": result.name,
                 "accuracy": result.accuracy,
                 "macro_f1": result.macro_f1,
                 "weighted_f1": result.weighted_f1,
+                "fold_macro_f1_min": min(fold_scores),
+                "fold_macro_f1_max": max(fold_scores),
             }
-            for result in results
-        ]
-    )
-    metrics.to_csv(output_dir / "metrics.csv", index=False, float_format="%.6f")
+        )
+        for fold, fold_result in zip(folds, fold_results, strict=True):
+            missing = sorted(set(LABELS).difference(fold.test["label"]))
+            fold_metric_rows.append(
+                {
+                    "model": result.name,
+                    "fold": fold.number,
+                    "accuracy": fold_result.accuracy,
+                    "macro_f1": fold_result.macro_f1,
+                    "weighted_f1": fold_result.weighted_f1,
+                    "test_excerpts": len(fold.test),
+                    "test_threads": fold.test["source_url"].nunique(),
+                    "missing_test_labels": "|".join(missing),
+                }
+            )
 
-    predictions = splits.test[
-        ["id", "source_site", "source_url", "source_context", "label"]
+    metrics = pd.DataFrame(metric_rows)
+    fold_metrics = pd.DataFrame(fold_metric_rows)
+    metrics.to_csv(output_dir / "metrics.csv", index=False, float_format="%.6f")
+    fold_metrics.to_csv(
+        output_dir / "fold_metrics.csv", index=False, float_format="%.6f"
+    )
+
+    predictions = evaluation[
+        ["id", "fold", "source_site", "source_url", "source_context", "label"]
     ].copy()
     for result in results:
         predictions[result.name] = result.predictions
     predictions.to_csv(output_dir / "predictions.csv", index=False)
+    predictions[["id", "fold", "source_site", "source_url"]].to_csv(
+        output_dir / "fold_assignments.csv", index=False
+    )
 
     per_class = []
     for result in results:
         report = classification_report(
-            splits.test["label"],
+            evaluation["label"],
             result.predictions,
             labels=list(LABELS),
             output_dict=True,
@@ -78,15 +114,30 @@ def write_results(
         "dataset": {
             "path": str(dataset_path),
             "sha256": _sha256(dataset_path),
-            "rows": sum(len(frame) for frame in splits.as_dict().values()),
+            "rows": len(evaluation),
         },
-        "split": {
-            name: {
-                "rows": len(frame),
-                "source_threads": frame["source_url"].nunique(),
-                "label_counts": frame["label"].value_counts().sort_index().to_dict(),
-            }
-            for name, frame in splits.as_dict().items()
+        "cross_validation": {
+            "strategy": "StratifiedGroupKFold",
+            "n_splits": OUTER_SPLITS,
+            "shuffle": True,
+            "random_state": CV_RANDOM_STATE,
+            "evaluated_folds": [fold.number for fold in folds],
+            "folds": [
+                {
+                    "fold": fold.number,
+                    "train_excerpts": len(fold.train),
+                    "train_threads": fold.train["source_url"].nunique(),
+                    "test_excerpts": len(fold.test),
+                    "test_threads": fold.test["source_url"].nunique(),
+                    "test_label_counts": (
+                        fold.test["label"].value_counts().sort_index().to_dict()
+                    ),
+                    "missing_test_labels": sorted(
+                        set(LABELS).difference(fold.test["label"])
+                    ),
+                }
+                for fold in folds
+            ],
         },
         "models": {result.name: result.parameters for result in results},
         "details": details,
@@ -108,20 +159,24 @@ def write_results(
 
     comparison = metrics.sort_values("macro_f1", ascending=True).copy()
     comparison["display_name"] = comparison["model"].map(DISPLAY_NAMES)
-    fig, axis = plt.subplots(figsize=(8, 4.5))
+    figure, axis = plt.subplots(figsize=(8, 4.5))
     axis.barh(comparison["display_name"], comparison["macro_f1"], color="#4472C4")
-    axis.set(xlabel="Macro F1", xlim=(0, 1), title="Unseen-thread test performance")
+    axis.set(
+        xlabel="Pooled out-of-fold macro F1",
+        xlim=(0, 1),
+        title="Five-fold unseen-thread cross-validation",
+    )
     for index, value in enumerate(comparison["macro_f1"]):
         axis.text(value + 0.015, index, f"{value:.3f}", va="center")
-    fig.tight_layout()
-    fig.savefig(output_dir / "model_comparison.png", dpi=160)
-    plt.close(fig)
+    figure.tight_layout()
+    figure.savefig(output_dir / "model_comparison.png", dpi=160)
+    plt.close(figure)
 
     for result in results:
         matrix = confusion_matrix(
-            splits.test["label"], result.predictions, labels=list(LABELS)
+            evaluation["label"], result.predictions, labels=list(LABELS)
         )
-        fig, axis = plt.subplots(figsize=(7, 5.5))
+        figure, axis = plt.subplots(figsize=(7, 5.5))
         image = axis.imshow(matrix, cmap="Blues")
         axis.set_xticks(range(len(LABELS)), LABELS, rotation=30, ha="right")
         axis.set_yticks(range(len(LABELS)), LABELS)
@@ -133,10 +188,12 @@ def write_results(
         for row in range(len(LABELS)):
             for column in range(len(LABELS)):
                 axis.text(column, row, matrix[row, column], ha="center", va="center")
-        fig.colorbar(image, ax=axis, fraction=0.046, pad=0.04)
-        fig.tight_layout()
-        fig.savefig(output_dir / f"confusion_matrix_{result.name}.png", dpi=160)
-        plt.close(fig)
+        figure.colorbar(image, ax=axis, fraction=0.046, pad=0.04)
+        figure.tight_layout()
+        figure.savefig(
+            output_dir / f"confusion_matrix_{result.name}.png", dpi=160
+        )
+        plt.close(figure)
 
 
 def _package_is_installed(package: str) -> bool:

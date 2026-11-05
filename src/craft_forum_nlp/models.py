@@ -9,6 +9,8 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, f1_score
 from sklearn.pipeline import Pipeline
 
+from craft_forum_nlp.splits import CV_RANDOM_STATE, INNER_SPLITS, make_inner_folds
+
 
 TFIDF_C_VALUES = (0.25, 1.0, 4.0)
 
@@ -69,7 +71,7 @@ def _tfidf_pipeline(c_value: float) -> Pipeline:
                     C=c_value,
                     class_weight="balanced",
                     max_iter=2_000,
-                    random_state=42,
+                    random_state=CV_RANDOM_STATE,
                 ),
             ),
         ]
@@ -78,31 +80,58 @@ def _tfidf_pipeline(c_value: float) -> Pipeline:
 
 def evaluate_tfidf(
     train: pd.DataFrame,
-    validation: pd.DataFrame,
     test: pd.DataFrame,
-) -> tuple[ModelResult, list[dict[str, float]]]:
-    candidates: list[tuple[float, float, Pipeline]] = []
-    validation_results = []
+) -> tuple[ModelResult, list[dict[str, object]]]:
+    """Tune inside the outer training set, then evaluate its held-out threads."""
+    candidates: list[tuple[float, float]] = []
+    validation_results: list[dict[str, object]] = []
+    inner_folds = make_inner_folds(train)
 
     for c_value in TFIDF_C_VALUES:
-        model = _tfidf_pipeline(c_value)
-        model.fit(train["text"], train["label"])
-        predictions = model.predict(validation["text"])
-        macro_f1 = float(
-            f1_score(validation["label"], predictions, average="macro", zero_division=0)
-        )
-        accuracy = float(accuracy_score(validation["label"], predictions))
-        validation_results.append(
-            {"C": c_value, "accuracy": accuracy, "macro_f1": macro_f1}
-        )
-        candidates.append((macro_f1, -c_value, model))
+        truth_parts = []
+        prediction_parts = []
+        fold_metrics = []
+        for fold in inner_folds:
+            model = _tfidf_pipeline(c_value)
+            model.fit(fold.train["text"], fold.train["label"])
+            predictions = model.predict(fold.test["text"])
+            truth_parts.append(fold.test["label"])
+            prediction_parts.append(predictions)
+            fold_metrics.append(
+                {
+                    "fold": fold.number,
+                    "accuracy": float(accuracy_score(fold.test["label"], predictions)),
+                    "macro_f1": float(
+                        f1_score(
+                            fold.test["label"],
+                            predictions,
+                            average="macro",
+                            zero_division=0,
+                        )
+                    ),
+                }
+            )
 
-    _, _, selected_model = max(candidates, key=lambda item: item[:2])
-    selected_c = float(selected_model.named_steps["classifier"].C)
-    selected_model.fit(
-        pd.concat([train["text"], validation["text"]], ignore_index=True),
-        pd.concat([train["label"], validation["label"]], ignore_index=True),
-    )
+        truth = pd.concat(truth_parts, ignore_index=True)
+        pooled_predictions = np.concatenate(prediction_parts)
+        macro_f1 = float(
+            f1_score(truth, pooled_predictions, average="macro", zero_division=0)
+        )
+        accuracy = float(accuracy_score(truth, pooled_predictions))
+        validation_results.append(
+            {
+                "C": c_value,
+                "accuracy": accuracy,
+                "macro_f1": macro_f1,
+                "folds": fold_metrics,
+            }
+        )
+        candidates.append((macro_f1, -c_value))
+
+    _, negative_c = max(candidates)
+    selected_c = float(-negative_c)
+    selected_model = _tfidf_pipeline(selected_c)
+    selected_model.fit(train["text"], train["label"])
     test_predictions = selected_model.predict(test["text"])
     result = score_predictions(
         "tfidf_logistic_regression",
@@ -112,7 +141,8 @@ def evaluate_tfidf(
             "C": selected_c,
             "class_weight": "balanced",
             "ngram_range": [1, 2],
-            "selection_metric": "validation_macro_f1",
+            "selection_metric": "inner_grouped_oof_macro_f1",
+            "inner_splits": INNER_SPLITS,
         },
     )
     return result, validation_results
