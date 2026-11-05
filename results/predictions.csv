@@ -1,38 +1,213 @@
-id,source_site,source_url,source_context,label,majority,tfidf_logistic_regression,distilbert,distilbert_weighted
-85,KnittingHelp,https://forum.knittinghelp.com/t/crochet-tension/162634,Crochet tension,technical_help,technical_help,meta_opinion,technical_help,meta_opinion
-86,KnittingHelp,https://forum.knittinghelp.com/t/crochet-tension/162634,Crochet tension,technical_help,technical_help,technical_help,technical_help,meta_opinion
-87,KnittingHelp,https://forum.knittinghelp.com/t/crochet-tension/162634,Crochet tension,technical_help,technical_help,technical_help,technical_help,critique_feedback
-88,KnittingHelp,https://forum.knittinghelp.com/t/crochet-tension/162634,Crochet tension,technical_help,technical_help,technical_help,technical_help,meta_opinion
-89,KnittingHelp,https://forum.knittinghelp.com/t/crochet-tension/162634,Crochet tension,technical_help,technical_help,showcase_reaction,technical_help,showcase_reaction
-90,KnittingHelp,https://forum.knittinghelp.com/t/crochet-tension/162634,Crochet tension,meta_opinion,technical_help,meta_opinion,technical_help,meta_opinion
-91,KnittingHelp,https://forum.knittinghelp.com/t/crochet-tension/162634,Crochet tension,technical_help,technical_help,showcase_reaction,technical_help,critique_feedback
-92,KnittingHelp,https://forum.knittinghelp.com/t/crochet-tension/162634,Crochet tension,technical_help,technical_help,meta_opinion,technical_help,meta_opinion
-93,KnittingHelp,https://forum.knittinghelp.com/t/crochet-tension/162634,Crochet tension,technical_help,technical_help,technical_help,technical_help,critique_feedback
-94,KnittingHelp,https://forum.knittinghelp.com/t/crochet-tension/162634,Crochet tension,technical_help,technical_help,technical_help,technical_help,technical_help
-95,KnittingHelp,https://forum.knittinghelp.com/t/crochet-tension/162634,Crochet tension,technical_help,technical_help,technical_help,technical_help,critique_feedback
-96,KnittingHelp,https://forum.knittinghelp.com/t/crochet-tension/162634,Crochet tension,technical_help,technical_help,technical_help,technical_help,critique_feedback
-97,KnittingHelp,https://forum.knittinghelp.com/t/crochet-tension/162634,Crochet tension,showcase_reaction,technical_help,meta_opinion,technical_help,showcase_reaction
-129,WetCanvas,https://www.wetcanvas.com/forums/forum/the-wetcanvas-galleria/open-critique-forum/,Open Critique Forum listing,critique_feedback,technical_help,showcase_reaction,technical_help,meta_opinion
-130,WetCanvas,https://www.wetcanvas.com/forums/forum/the-wetcanvas-galleria/open-critique-forum/,Open Critique Forum listing,critique_feedback,technical_help,technical_help,technical_help,meta_opinion
-131,WetCanvas,https://www.wetcanvas.com/forums/forum/the-wetcanvas-galleria/open-critique-forum/,Open Critique Forum listing,critique_feedback,technical_help,showcase_reaction,technical_help,meta_opinion
-132,WetCanvas,https://www.wetcanvas.com/forums/forum/the-wetcanvas-galleria/open-critique-forum/,Open Critique Forum listing,critique_feedback,technical_help,technical_help,technical_help,meta_opinion
-133,WetCanvas,https://www.wetcanvas.com/forums/forum/the-wetcanvas-galleria/open-critique-forum/,Open Critique Forum listing,showcase_reaction,technical_help,meta_opinion,technical_help,critique_feedback
-134,WetCanvas,https://www.wetcanvas.com/forums/forum/the-wetcanvas-galleria/open-critique-forum/,Open Critique Forum listing,showcase_reaction,technical_help,technical_help,technical_help,technical_help
-135,WetCanvas,https://www.wetcanvas.com/forums/forum/the-wetcanvas-galleria/open-critique-forum/,Open Critique Forum listing,showcase_reaction,technical_help,critique_feedback,technical_help,meta_opinion
-136,WetCanvas,https://www.wetcanvas.com/forums/forum/the-wetcanvas-galleria/open-critique-forum/,Open Critique Forum listing,showcase_reaction,technical_help,showcase_reaction,technical_help,meta_opinion
-137,WetCanvas,https://www.wetcanvas.com/forums/forum/the-wetcanvas-galleria/open-critique-forum/,Open Critique Forum listing,showcase_reaction,technical_help,meta_opinion,technical_help,meta_opinion
-138,WetCanvas,https://www.wetcanvas.com/forums/forum/explore-media/watercolor/,Watercolor forum listing,meta_opinion,technical_help,meta_opinion,technical_help,meta_opinion
-139,WetCanvas,https://www.wetcanvas.com/forums/forum/explore-media/watercolor/,Watercolor forum listing,technical_help,technical_help,showcase_reaction,technical_help,meta_opinion
-140,WetCanvas,https://www.wetcanvas.com/forums/forum/explore-media/watercolor/,Watercolor forum listing,critique_feedback,technical_help,technical_help,technical_help,meta_opinion
-141,WetCanvas,https://www.wetcanvas.com/forums/forum/explore-media/watercolor/,Watercolor forum listing,technical_help,technical_help,meta_opinion,technical_help,critique_feedback
-142,WetCanvas,https://www.wetcanvas.com/forums/forum/explore-media/watercolor/,Watercolor forum listing,showcase_reaction,technical_help,showcase_reaction,technical_help,meta_opinion
-143,WetCanvas,https://www.wetcanvas.com/forums/forum/explore-media/watercolor/,Watercolor forum listing,technical_help,technical_help,technical_help,technical_help,meta_opinion
-144,WetCanvas,https://www.wetcanvas.com/forums/forum/explore-media/watercolor/,Watercolor forum listing,critique_feedback,technical_help,meta_opinion,technical_help,meta_opinion
-145,WetCanvas,https://www.wetcanvas.com/forums/forum/explore-media/watercolor/,Watercolor forum listing,technical_help,technical_help,meta_opinion,technical_help,meta_opinion
-146,WetCanvas,https://www.wetcanvas.com/forums/forum/explore-media/watercolor/,Watercolor forum listing,technical_help,technical_help,technical_help,technical_help,meta_opinion
-147,WetCanvas,https://www.wetcanvas.com/forums/forum/explore-media/watercolor/,Watercolor forum listing,showcase_reaction,technical_help,technical_help,technical_help,critique_feedback
-148,WetCanvas,https://www.wetcanvas.com/forums/forum/explore-media/watercolor/,Watercolor forum listing,showcase_reaction,technical_help,technical_help,technical_help,technical_help
-189,WetCanvas,https://www.wetcanvas.com/forums/topic/analyzing-and-evaluating-paintings/,Analyzing and Evaluating Paintings,meta_opinion,technical_help,meta_opinion,technical_help,meta_opinion
-190,WetCanvas,https://www.wetcanvas.com/forums/topic/analyzing-and-evaluating-paintings/,Analyzing and Evaluating Paintings,meta_opinion,technical_help,meta_opinion,technical_help,meta_opinion
-191,WetCanvas,https://www.wetcanvas.com/forums/topic/analyzing-and-evaluating-paintings/,Analyzing and Evaluating Paintings,meta_opinion,technical_help,technical_help,technical_help,meta_opinion
-192,WetCanvas,https://www.wetcanvas.com/forums/topic/analyzing-and-evaluating-paintings/,Analyzing and Evaluating Paintings,meta_opinion,technical_help,technical_help,technical_help,meta_opinion
+id,fold,source_site,source_url,source_context,label,majority,tfidf_logistic_regression,distilbert,distilbert_weighted
+27,1,KnittingHelp,https://forum.knittinghelp.com/t/crochet-hat-problem/70917,Crochet Hat Problem,technical_help,technical_help,showcase_reaction,technical_help,meta_opinion
+28,1,KnittingHelp,https://forum.knittinghelp.com/t/crochet-hat-problem/70917,Crochet Hat Problem,technical_help,technical_help,showcase_reaction,technical_help,meta_opinion
+29,1,KnittingHelp,https://forum.knittinghelp.com/t/crochet-hat-problem/70917,Crochet Hat Problem,technical_help,technical_help,technical_help,technical_help,critique_feedback
+30,1,KnittingHelp,https://forum.knittinghelp.com/t/crochet-hat-problem/70917,Crochet Hat Problem,technical_help,technical_help,critique_feedback,technical_help,critique_feedback
+31,1,KnittingHelp,https://forum.knittinghelp.com/t/crochet-hat-problem/70917,Crochet Hat Problem,technical_help,technical_help,meta_opinion,technical_help,critique_feedback
+32,1,KnittingHelp,https://forum.knittinghelp.com/t/crochet-hat-problem/70917,Crochet Hat Problem,meta_opinion,technical_help,technical_help,technical_help,meta_opinion
+33,1,KnittingHelp,https://forum.knittinghelp.com/t/crochet-hat-problem/70917,Crochet Hat Problem,technical_help,technical_help,meta_opinion,technical_help,critique_feedback
+34,1,KnittingHelp,https://forum.knittinghelp.com/t/crochet-hat-problem/70917,Crochet Hat Problem,technical_help,technical_help,technical_help,technical_help,technical_help
+35,1,KnittingHelp,https://forum.knittinghelp.com/t/crochet-hat-problem/70917,Crochet Hat Problem,technical_help,technical_help,technical_help,technical_help,meta_opinion
+36,1,KnittingHelp,https://forum.knittinghelp.com/t/crochet-hat-problem/70917,Crochet Hat Problem,technical_help,technical_help,technical_help,technical_help,meta_opinion
+37,1,KnittingHelp,https://forum.knittinghelp.com/t/crochet-hat-problem/70917,Crochet Hat Problem,technical_help,technical_help,technical_help,technical_help,meta_opinion
+38,1,KnittingHelp,https://forum.knittinghelp.com/t/crochet-hat-problem/70917,Crochet Hat Problem,technical_help,technical_help,technical_help,technical_help,meta_opinion
+98,1,KnittingHelp,https://forum.knittinghelp.com/t/best-yarn-to-crochet-a-granny-square-tote-bag/160906,Best yarn for granny square tote,technical_help,technical_help,technical_help,technical_help,meta_opinion
+99,1,KnittingHelp,https://forum.knittinghelp.com/t/best-yarn-to-crochet-a-granny-square-tote-bag/160906,Best yarn for granny square tote,technical_help,technical_help,technical_help,technical_help,meta_opinion
+100,1,KnittingHelp,https://forum.knittinghelp.com/t/best-yarn-to-crochet-a-granny-square-tote-bag/160906,Best yarn for granny square tote,technical_help,technical_help,meta_opinion,technical_help,meta_opinion
+101,1,KnittingHelp,https://forum.knittinghelp.com/t/best-yarn-to-crochet-a-granny-square-tote-bag/160906,Best yarn for granny square tote,showcase_reaction,technical_help,technical_help,technical_help,meta_opinion
+102,1,KnittingHelp,https://forum.knittinghelp.com/t/best-yarn-to-crochet-a-granny-square-tote-bag/160906,Best yarn for granny square tote,technical_help,technical_help,technical_help,technical_help,meta_opinion
+103,1,KnittingHelp,https://forum.knittinghelp.com/t/best-yarn-to-crochet-a-granny-square-tote-bag/160906,Best yarn for granny square tote,showcase_reaction,technical_help,technical_help,technical_help,meta_opinion
+104,1,KnittingHelp,https://forum.knittinghelp.com/t/best-yarn-to-crochet-a-granny-square-tote-bag/160906,Best yarn for granny square tote,showcase_reaction,technical_help,meta_opinion,technical_help,critique_feedback
+105,1,KnittingHelp,https://forum.knittinghelp.com/t/best-yarn-to-crochet-a-granny-square-tote-bag/160906,Best yarn for granny square tote,technical_help,technical_help,technical_help,technical_help,meta_opinion
+106,1,KnittingHelp,https://forum.knittinghelp.com/t/best-yarn-to-crochet-a-granny-square-tote-bag/160906,Best yarn for granny square tote,critique_feedback,technical_help,critique_feedback,technical_help,meta_opinion
+107,1,KnittingHelp,https://forum.knittinghelp.com/t/best-yarn-to-crochet-a-granny-square-tote-bag/160906,Best yarn for granny square tote,technical_help,technical_help,technical_help,technical_help,technical_help
+108,1,KnittingHelp,https://forum.knittinghelp.com/t/best-yarn-to-crochet-a-granny-square-tote-bag/160906,Best yarn for granny square tote,meta_opinion,technical_help,meta_opinion,technical_help,meta_opinion
+109,1,KnittingHelp,https://forum.knittinghelp.com/t/best-yarn-to-crochet-a-granny-square-tote-bag/160906,Best yarn for granny square tote,technical_help,technical_help,technical_help,technical_help,technical_help
+110,1,KnittingHelp,https://forum.knittinghelp.com/t/best-yarn-to-crochet-a-granny-square-tote-bag/160906,Best yarn for granny square tote,technical_help,technical_help,critique_feedback,technical_help,critique_feedback
+129,1,WetCanvas,https://www.wetcanvas.com/forums/forum/the-wetcanvas-galleria/open-critique-forum/,Open Critique Forum listing,critique_feedback,technical_help,showcase_reaction,technical_help,meta_opinion
+130,1,WetCanvas,https://www.wetcanvas.com/forums/forum/the-wetcanvas-galleria/open-critique-forum/,Open Critique Forum listing,critique_feedback,technical_help,technical_help,technical_help,meta_opinion
+131,1,WetCanvas,https://www.wetcanvas.com/forums/forum/the-wetcanvas-galleria/open-critique-forum/,Open Critique Forum listing,critique_feedback,technical_help,showcase_reaction,technical_help,meta_opinion
+132,1,WetCanvas,https://www.wetcanvas.com/forums/forum/the-wetcanvas-galleria/open-critique-forum/,Open Critique Forum listing,critique_feedback,technical_help,technical_help,technical_help,meta_opinion
+133,1,WetCanvas,https://www.wetcanvas.com/forums/forum/the-wetcanvas-galleria/open-critique-forum/,Open Critique Forum listing,showcase_reaction,technical_help,technical_help,technical_help,technical_help
+134,1,WetCanvas,https://www.wetcanvas.com/forums/forum/the-wetcanvas-galleria/open-critique-forum/,Open Critique Forum listing,showcase_reaction,technical_help,technical_help,technical_help,technical_help
+135,1,WetCanvas,https://www.wetcanvas.com/forums/forum/the-wetcanvas-galleria/open-critique-forum/,Open Critique Forum listing,showcase_reaction,technical_help,critique_feedback,technical_help,meta_opinion
+136,1,WetCanvas,https://www.wetcanvas.com/forums/forum/the-wetcanvas-galleria/open-critique-forum/,Open Critique Forum listing,showcase_reaction,technical_help,showcase_reaction,technical_help,meta_opinion
+137,1,WetCanvas,https://www.wetcanvas.com/forums/forum/the-wetcanvas-galleria/open-critique-forum/,Open Critique Forum listing,showcase_reaction,technical_help,showcase_reaction,technical_help,meta_opinion
+163,1,WetCanvas,https://www.wetcanvas.com/forums/topic/watercolor-challenge-june-2024-coffee-time/,Watercolor Challenge June 2024,showcase_reaction,technical_help,critique_feedback,technical_help,critique_feedback
+179,1,WetCanvas,http://www.wetcanvas.com/forums/archive/index.php/t-339742.html,Why watercolor doesn't get more respect,meta_opinion,technical_help,meta_opinion,technical_help,meta_opinion
+180,1,WetCanvas,http://www.wetcanvas.com/forums/archive/index.php/t-339742.html,Why watercolor doesn't get more respect,meta_opinion,technical_help,critique_feedback,technical_help,meta_opinion
+181,1,WetCanvas,http://www.wetcanvas.com/forums/archive/index.php/t-339742.html,Why watercolor doesn't get more respect,meta_opinion,technical_help,critique_feedback,technical_help,meta_opinion
+189,1,WetCanvas,https://www.wetcanvas.com/forums/topic/analyzing-and-evaluating-paintings/,Analyzing and Evaluating Paintings,meta_opinion,technical_help,meta_opinion,technical_help,meta_opinion
+190,1,WetCanvas,https://www.wetcanvas.com/forums/topic/analyzing-and-evaluating-paintings/,Analyzing and Evaluating Paintings,meta_opinion,technical_help,technical_help,technical_help,meta_opinion
+191,1,WetCanvas,https://www.wetcanvas.com/forums/topic/analyzing-and-evaluating-paintings/,Analyzing and Evaluating Paintings,meta_opinion,technical_help,technical_help,technical_help,meta_opinion
+192,1,WetCanvas,https://www.wetcanvas.com/forums/topic/analyzing-and-evaluating-paintings/,Analyzing and Evaluating Paintings,meta_opinion,technical_help,critique_feedback,technical_help,meta_opinion
+201,1,WetCanvas,https://www.wetcanvas.com/forums/topic/watercolor-challenge-june-2024-coffee-time/,Watercolor Challenge June 2024,critique_feedback,technical_help,technical_help,technical_help,critique_feedback
+202,1,WetCanvas,https://www.wetcanvas.com/forums/topic/watercolor-challenge-june-2024-coffee-time/,Watercolor Challenge June 2024,critique_feedback,technical_help,meta_opinion,technical_help,meta_opinion
+207,1,WetCanvas,http://www.wetcanvas.com/forums/archive/index.php/t-935943.html,my first watercolor,critique_feedback,technical_help,showcase_reaction,technical_help,critique_feedback
+50,2,KnittingHelp,https://forum.knittinghelp.com/t/need-help-reading-a-pattern-step/165564,Need help reading a pattern step,technical_help,technical_help,showcase_reaction,technical_help,meta_opinion
+51,2,KnittingHelp,https://forum.knittinghelp.com/t/need-help-reading-a-pattern-step/165564,Need help reading a pattern step,technical_help,technical_help,meta_opinion,technical_help,meta_opinion
+52,2,KnittingHelp,https://forum.knittinghelp.com/t/need-help-reading-a-pattern-step/165564,Need help reading a pattern step,technical_help,technical_help,meta_opinion,technical_help,critique_feedback
+53,2,KnittingHelp,https://forum.knittinghelp.com/t/need-help-reading-a-pattern-step/165564,Need help reading a pattern step,technical_help,technical_help,technical_help,technical_help,technical_help
+54,2,KnittingHelp,https://forum.knittinghelp.com/t/need-help-reading-a-pattern-step/165564,Need help reading a pattern step,technical_help,technical_help,meta_opinion,technical_help,critique_feedback
+55,2,KnittingHelp,https://forum.knittinghelp.com/t/need-help-reading-a-pattern-step/165564,Need help reading a pattern step,showcase_reaction,technical_help,showcase_reaction,technical_help,showcase_reaction
+56,2,KnittingHelp,https://forum.knittinghelp.com/t/need-help-reading-a-pattern-step/165564,Need help reading a pattern step,showcase_reaction,technical_help,meta_opinion,technical_help,showcase_reaction
+85,2,KnittingHelp,https://forum.knittinghelp.com/t/crochet-tension/162634,Crochet tension,technical_help,technical_help,meta_opinion,technical_help,meta_opinion
+86,2,KnittingHelp,https://forum.knittinghelp.com/t/crochet-tension/162634,Crochet tension,technical_help,technical_help,technical_help,technical_help,meta_opinion
+87,2,KnittingHelp,https://forum.knittinghelp.com/t/crochet-tension/162634,Crochet tension,technical_help,technical_help,technical_help,technical_help,critique_feedback
+88,2,KnittingHelp,https://forum.knittinghelp.com/t/crochet-tension/162634,Crochet tension,technical_help,technical_help,technical_help,technical_help,meta_opinion
+89,2,KnittingHelp,https://forum.knittinghelp.com/t/crochet-tension/162634,Crochet tension,technical_help,technical_help,showcase_reaction,technical_help,showcase_reaction
+90,2,KnittingHelp,https://forum.knittinghelp.com/t/crochet-tension/162634,Crochet tension,meta_opinion,technical_help,meta_opinion,technical_help,meta_opinion
+91,2,KnittingHelp,https://forum.knittinghelp.com/t/crochet-tension/162634,Crochet tension,technical_help,technical_help,showcase_reaction,technical_help,critique_feedback
+92,2,KnittingHelp,https://forum.knittinghelp.com/t/crochet-tension/162634,Crochet tension,technical_help,technical_help,meta_opinion,technical_help,meta_opinion
+93,2,KnittingHelp,https://forum.knittinghelp.com/t/crochet-tension/162634,Crochet tension,technical_help,technical_help,technical_help,technical_help,critique_feedback
+94,2,KnittingHelp,https://forum.knittinghelp.com/t/crochet-tension/162634,Crochet tension,technical_help,technical_help,technical_help,technical_help,technical_help
+95,2,KnittingHelp,https://forum.knittinghelp.com/t/crochet-tension/162634,Crochet tension,technical_help,technical_help,technical_help,technical_help,critique_feedback
+96,2,KnittingHelp,https://forum.knittinghelp.com/t/crochet-tension/162634,Crochet tension,technical_help,technical_help,technical_help,technical_help,critique_feedback
+97,2,KnittingHelp,https://forum.knittinghelp.com/t/crochet-tension/162634,Crochet tension,showcase_reaction,technical_help,meta_opinion,technical_help,critique_feedback
+138,2,WetCanvas,https://www.wetcanvas.com/forums/forum/explore-media/watercolor/,Watercolor forum listing,meta_opinion,technical_help,meta_opinion,technical_help,meta_opinion
+139,2,WetCanvas,https://www.wetcanvas.com/forums/forum/explore-media/watercolor/,Watercolor forum listing,technical_help,technical_help,showcase_reaction,technical_help,meta_opinion
+140,2,WetCanvas,https://www.wetcanvas.com/forums/forum/explore-media/watercolor/,Watercolor forum listing,critique_feedback,technical_help,technical_help,technical_help,meta_opinion
+141,2,WetCanvas,https://www.wetcanvas.com/forums/forum/explore-media/watercolor/,Watercolor forum listing,technical_help,technical_help,meta_opinion,technical_help,critique_feedback
+142,2,WetCanvas,https://www.wetcanvas.com/forums/forum/explore-media/watercolor/,Watercolor forum listing,showcase_reaction,technical_help,showcase_reaction,technical_help,meta_opinion
+143,2,WetCanvas,https://www.wetcanvas.com/forums/forum/explore-media/watercolor/,Watercolor forum listing,technical_help,technical_help,showcase_reaction,technical_help,meta_opinion
+144,2,WetCanvas,https://www.wetcanvas.com/forums/forum/explore-media/watercolor/,Watercolor forum listing,critique_feedback,technical_help,meta_opinion,technical_help,critique_feedback
+145,2,WetCanvas,https://www.wetcanvas.com/forums/forum/explore-media/watercolor/,Watercolor forum listing,technical_help,technical_help,showcase_reaction,technical_help,meta_opinion
+146,2,WetCanvas,https://www.wetcanvas.com/forums/forum/explore-media/watercolor/,Watercolor forum listing,technical_help,technical_help,technical_help,technical_help,critique_feedback
+147,2,WetCanvas,https://www.wetcanvas.com/forums/forum/explore-media/watercolor/,Watercolor forum listing,showcase_reaction,technical_help,technical_help,technical_help,critique_feedback
+148,2,WetCanvas,https://www.wetcanvas.com/forums/forum/explore-media/watercolor/,Watercolor forum listing,showcase_reaction,technical_help,technical_help,technical_help,technical_help
+164,2,WetCanvas,http://www.wetcanvas.com/forums/archive/index.php/t-928009.html,Please critique this - Poppies,critique_feedback,technical_help,meta_opinion,technical_help,critique_feedback
+165,2,WetCanvas,http://www.wetcanvas.com/forums/archive/index.php/t-928009.html,Please critique this - Poppies,critique_feedback,technical_help,technical_help,technical_help,critique_feedback
+166,2,WetCanvas,http://www.wetcanvas.com/forums/archive/index.php/t-928009.html,Please critique this - Poppies,critique_feedback,technical_help,critique_feedback,technical_help,critique_feedback
+167,2,WetCanvas,http://www.wetcanvas.com/forums/archive/index.php/t-928009.html,Please critique this - Poppies,critique_feedback,technical_help,technical_help,technical_help,meta_opinion
+168,2,WetCanvas,http://www.wetcanvas.com/forums/archive/index.php/t-928009.html,Please critique this - Poppies,critique_feedback,technical_help,critique_feedback,technical_help,critique_feedback
+173,2,WetCanvas,https://www.wetcanvas.com/forums/topic/are-watercolor-workshops-really-worth-the-money/,Are Watercolor Workshops really worth the money?,meta_opinion,technical_help,meta_opinion,technical_help,meta_opinion
+174,2,WetCanvas,https://www.wetcanvas.com/forums/topic/are-watercolor-workshops-really-worth-the-money/,Are Watercolor Workshops really worth the money?,meta_opinion,technical_help,technical_help,technical_help,meta_opinion
+175,2,WetCanvas,https://www.wetcanvas.com/forums/topic/are-watercolor-workshops-really-worth-the-money/,Are Watercolor Workshops really worth the money?,meta_opinion,technical_help,meta_opinion,technical_help,meta_opinion
+176,2,WetCanvas,https://www.wetcanvas.com/forums/topic/are-watercolor-workshops-really-worth-the-money/,Are Watercolor Workshops really worth the money?,meta_opinion,technical_help,technical_help,technical_help,critique_feedback
+177,2,WetCanvas,https://www.wetcanvas.com/forums/topic/are-watercolor-workshops-really-worth-the-money/,Are Watercolor Workshops really worth the money?,meta_opinion,technical_help,showcase_reaction,technical_help,meta_opinion
+178,2,WetCanvas,https://www.wetcanvas.com/forums/topic/are-watercolor-workshops-really-worth-the-money/,Are Watercolor Workshops really worth the money?,meta_opinion,technical_help,technical_help,technical_help,meta_opinion
+206,2,WetCanvas,http://www.wetcanvas.com/forums/archive/index.php/t-928009.html,Please critique this - Poppies,critique_feedback,technical_help,meta_opinion,technical_help,meta_opinion
+9,3,KnittingHelp,https://forum.knittinghelp.com/t/funny-rhymes-to-help-learn-a-new-hobby/159112,Funny rhymes to help learn a new hobby,showcase_reaction,technical_help,technical_help,technical_help,meta_opinion
+10,3,KnittingHelp,https://forum.knittinghelp.com/t/funny-rhymes-to-help-learn-a-new-hobby/159112,Funny rhymes to help learn a new hobby,showcase_reaction,technical_help,technical_help,technical_help,critique_feedback
+11,3,KnittingHelp,https://forum.knittinghelp.com/t/funny-rhymes-to-help-learn-a-new-hobby/159112,Funny rhymes to help learn a new hobby,meta_opinion,technical_help,meta_opinion,technical_help,meta_opinion
+12,3,KnittingHelp,https://forum.knittinghelp.com/t/funny-rhymes-to-help-learn-a-new-hobby/159112,Funny rhymes to help learn a new hobby,showcase_reaction,technical_help,showcase_reaction,technical_help,meta_opinion
+13,3,KnittingHelp,https://forum.knittinghelp.com/t/funny-rhymes-to-help-learn-a-new-hobby/159112,Funny rhymes to help learn a new hobby,meta_opinion,technical_help,technical_help,technical_help,meta_opinion
+14,3,KnittingHelp,https://forum.knittinghelp.com/t/funny-rhymes-to-help-learn-a-new-hobby/159112,Funny rhymes to help learn a new hobby,meta_opinion,technical_help,critique_feedback,technical_help,meta_opinion
+15,3,KnittingHelp,https://forum.knittinghelp.com/t/funny-rhymes-to-help-learn-a-new-hobby/159112,Funny rhymes to help learn a new hobby,meta_opinion,technical_help,critique_feedback,technical_help,meta_opinion
+16,3,KnittingHelp,https://forum.knittinghelp.com/t/funny-rhymes-to-help-learn-a-new-hobby/159112,Funny rhymes to help learn a new hobby,meta_opinion,technical_help,technical_help,technical_help,meta_opinion
+17,3,KnittingHelp,https://forum.knittinghelp.com/t/funny-rhymes-to-help-learn-a-new-hobby/159112,Funny rhymes to help learn a new hobby,meta_opinion,technical_help,meta_opinion,technical_help,meta_opinion
+18,3,KnittingHelp,https://forum.knittinghelp.com/t/funny-rhymes-to-help-learn-a-new-hobby/159112,Funny rhymes to help learn a new hobby,meta_opinion,technical_help,meta_opinion,technical_help,meta_opinion
+57,3,KnittingHelp,https://forum.knittinghelp.com/t/stuck-on-a-cable-stitch/165210,Stuck on a cable stitch,technical_help,technical_help,technical_help,technical_help,meta_opinion
+58,3,KnittingHelp,https://forum.knittinghelp.com/t/stuck-on-a-cable-stitch/165210,Stuck on a cable stitch,technical_help,technical_help,critique_feedback,technical_help,meta_opinion
+59,3,KnittingHelp,https://forum.knittinghelp.com/t/stuck-on-a-cable-stitch/165210,Stuck on a cable stitch,technical_help,technical_help,showcase_reaction,technical_help,meta_opinion
+60,3,KnittingHelp,https://forum.knittinghelp.com/t/stuck-on-a-cable-stitch/165210,Stuck on a cable stitch,technical_help,technical_help,showcase_reaction,technical_help,meta_opinion
+61,3,KnittingHelp,https://forum.knittinghelp.com/t/stuck-on-a-cable-stitch/165210,Stuck on a cable stitch,technical_help,technical_help,technical_help,technical_help,technical_help
+62,3,KnittingHelp,https://forum.knittinghelp.com/t/stuck-on-a-cable-stitch/165210,Stuck on a cable stitch,technical_help,technical_help,meta_opinion,technical_help,critique_feedback
+63,3,KnittingHelp,https://forum.knittinghelp.com/t/stuck-on-a-cable-stitch/165210,Stuck on a cable stitch,technical_help,technical_help,technical_help,technical_help,technical_help
+64,3,KnittingHelp,https://forum.knittinghelp.com/t/stuck-on-a-cable-stitch/165210,Stuck on a cable stitch,technical_help,technical_help,showcase_reaction,technical_help,meta_opinion
+65,3,KnittingHelp,https://forum.knittinghelp.com/t/stuck-on-a-cable-stitch/165210,Stuck on a cable stitch,showcase_reaction,technical_help,critique_feedback,technical_help,meta_opinion
+66,3,KnittingHelp,https://forum.knittinghelp.com/t/stuck-on-a-cable-stitch/165210,Stuck on a cable stitch,technical_help,technical_help,critique_feedback,technical_help,meta_opinion
+67,3,KnittingHelp,https://forum.knittinghelp.com/t/stuck-on-a-cable-stitch/165210,Stuck on a cable stitch,technical_help,technical_help,showcase_reaction,technical_help,critique_feedback
+68,3,KnittingHelp,https://forum.knittinghelp.com/t/stuck-on-a-cable-stitch/165210,Stuck on a cable stitch,critique_feedback,technical_help,technical_help,technical_help,technical_help
+69,3,KnittingHelp,https://forum.knittinghelp.com/t/stuck-on-a-cable-stitch/165210,Stuck on a cable stitch,technical_help,technical_help,meta_opinion,technical_help,critique_feedback
+70,3,KnittingHelp,https://forum.knittinghelp.com/t/stuck-on-a-cable-stitch/165210,Stuck on a cable stitch,showcase_reaction,technical_help,showcase_reaction,technical_help,showcase_reaction
+71,3,KnittingHelp,https://forum.knittinghelp.com/t/stuck-on-a-cable-stitch/165210,Stuck on a cable stitch,technical_help,technical_help,technical_help,technical_help,critique_feedback
+72,3,KnittingHelp,https://forum.knittinghelp.com/t/stuck-on-a-cable-stitch/165210,Stuck on a cable stitch,technical_help,technical_help,critique_feedback,technical_help,technical_help
+73,3,KnittingHelp,https://forum.knittinghelp.com/t/stuck-on-a-cable-stitch/165210,Stuck on a cable stitch,technical_help,technical_help,technical_help,technical_help,meta_opinion
+74,3,KnittingHelp,https://forum.knittinghelp.com/t/stuck-on-a-cable-stitch/165210,Stuck on a cable stitch,technical_help,technical_help,meta_opinion,technical_help,critique_feedback
+75,3,KnittingHelp,https://forum.knittinghelp.com/t/stuck-on-a-cable-stitch/165210,Stuck on a cable stitch,critique_feedback,technical_help,showcase_reaction,technical_help,critique_feedback
+76,3,KnittingHelp,https://forum.knittinghelp.com/t/stuck-on-a-cable-stitch/165210,Stuck on a cable stitch,technical_help,technical_help,critique_feedback,technical_help,meta_opinion
+186,3,WetCanvas,https://www.wetcanvas.com/forums/topic/contrast-thinking-about-and-using-it-effectively/,Contrast: Thinking About and Using It Effectively,critique_feedback,technical_help,critique_feedback,technical_help,critique_feedback
+187,3,WetCanvas,https://www.wetcanvas.com/forums/topic/contrast-thinking-about-and-using-it-effectively/,Contrast: Thinking About and Using It Effectively,critique_feedback,technical_help,meta_opinion,technical_help,critique_feedback
+188,3,WetCanvas,https://www.wetcanvas.com/forums/topic/contrast-thinking-about-and-using-it-effectively/,Contrast: Thinking About and Using It Effectively,critique_feedback,technical_help,meta_opinion,technical_help,critique_feedback
+203,3,WetCanvas,https://www.wetcanvas.com/forums/topic/starting-a-handmade-watercolor-business-looking-for-feedback/,Starting a handmade watercolor business,meta_opinion,technical_help,meta_opinion,technical_help,meta_opinion
+204,3,WetCanvas,https://www.wetcanvas.com/forums/topic/starting-a-handmade-watercolor-business-looking-for-feedback/,Starting a handmade watercolor business,meta_opinion,technical_help,meta_opinion,technical_help,meta_opinion
+208,3,WetCanvas,https://www.wetcanvas.com/forums/topic/contrast-thinking-about-and-using-it-effectively/,Contrast: Thinking About and Using It Effectively,critique_feedback,technical_help,showcase_reaction,technical_help,meta_opinion
+210,3,KnittingHelp,https://forum.knittinghelp.com/t/stuck-on-a-cable-stitch/165210,Stuck on a cable stitch,critique_feedback,technical_help,technical_help,technical_help,critique_feedback
+212,3,KnittingHelp,https://forum.knittinghelp.com/t/stuck-on-a-cable-stitch/165210,Stuck on a cable stitch,critique_feedback,technical_help,critique_feedback,technical_help,critique_feedback
+39,4,KnittingHelp,https://forum.knittinghelp.com/t/crochet-please-help-joining-2-pieces-of-dc-top-together-not-using-slip-mattress-or-invisible-stitch/166064,Joining crochet pieces,technical_help,technical_help,showcase_reaction,technical_help,meta_opinion
+40,4,KnittingHelp,https://forum.knittinghelp.com/t/crochet-please-help-joining-2-pieces-of-dc-top-together-not-using-slip-mattress-or-invisible-stitch/166064,Joining crochet pieces,technical_help,technical_help,technical_help,technical_help,technical_help
+41,4,KnittingHelp,https://forum.knittinghelp.com/t/crochet-please-help-joining-2-pieces-of-dc-top-together-not-using-slip-mattress-or-invisible-stitch/166064,Joining crochet pieces,technical_help,technical_help,technical_help,technical_help,meta_opinion
+42,4,KnittingHelp,https://forum.knittinghelp.com/t/crochet-please-help-joining-2-pieces-of-dc-top-together-not-using-slip-mattress-or-invisible-stitch/166064,Joining crochet pieces,technical_help,technical_help,technical_help,technical_help,meta_opinion
+43,4,KnittingHelp,https://forum.knittinghelp.com/t/crochet-please-help-joining-2-pieces-of-dc-top-together-not-using-slip-mattress-or-invisible-stitch/166064,Joining crochet pieces,technical_help,technical_help,technical_help,technical_help,meta_opinion
+44,4,KnittingHelp,https://forum.knittinghelp.com/t/crochet-please-help-joining-2-pieces-of-dc-top-together-not-using-slip-mattress-or-invisible-stitch/166064,Joining crochet pieces,critique_feedback,technical_help,technical_help,technical_help,technical_help
+45,4,KnittingHelp,https://forum.knittinghelp.com/t/crochet-please-help-joining-2-pieces-of-dc-top-together-not-using-slip-mattress-or-invisible-stitch/166064,Joining crochet pieces,critique_feedback,technical_help,technical_help,technical_help,technical_help
+46,4,KnittingHelp,https://forum.knittinghelp.com/t/crochet-please-help-joining-2-pieces-of-dc-top-together-not-using-slip-mattress-or-invisible-stitch/166064,Joining crochet pieces,meta_opinion,technical_help,technical_help,technical_help,critique_feedback
+47,4,KnittingHelp,https://forum.knittinghelp.com/t/need-help-with-pattern/165597,Need help with pattern,technical_help,technical_help,technical_help,technical_help,meta_opinion
+48,4,KnittingHelp,https://forum.knittinghelp.com/t/need-help-with-pattern/165597,Need help with pattern,technical_help,technical_help,technical_help,technical_help,critique_feedback
+49,4,KnittingHelp,https://forum.knittinghelp.com/t/need-help-with-pattern/165597,Need help with pattern,technical_help,technical_help,meta_opinion,technical_help,meta_opinion
+111,4,KnittingHelp,https://forum.knittinghelp.com/t/tunisian-crochet/161008,Tunisian crochet,technical_help,technical_help,technical_help,technical_help,meta_opinion
+112,4,KnittingHelp,https://forum.knittinghelp.com/t/tunisian-crochet/161008,Tunisian crochet,technical_help,technical_help,technical_help,technical_help,meta_opinion
+113,4,KnittingHelp,https://forum.knittinghelp.com/t/tunisian-crochet/161008,Tunisian crochet,technical_help,technical_help,technical_help,technical_help,meta_opinion
+114,4,KnittingHelp,https://forum.knittinghelp.com/t/tunisian-crochet/161008,Tunisian crochet,meta_opinion,technical_help,meta_opinion,technical_help,meta_opinion
+115,4,KnittingHelp,https://forum.knittinghelp.com/t/tunisian-crochet/161008,Tunisian crochet,technical_help,technical_help,meta_opinion,technical_help,meta_opinion
+116,4,KnittingHelp,https://forum.knittinghelp.com/t/tunisian-crochet/161008,Tunisian crochet,meta_opinion,technical_help,meta_opinion,technical_help,meta_opinion
+117,4,KnittingHelp,https://forum.knittinghelp.com/t/tunisian-crochet/161008,Tunisian crochet,technical_help,technical_help,technical_help,technical_help,technical_help
+118,4,KnittingHelp,https://forum.knittinghelp.com/t/tunisian-crochet/161008,Tunisian crochet,technical_help,technical_help,meta_opinion,technical_help,meta_opinion
+119,4,KnittingHelp,https://forum.knittinghelp.com/t/tunisian-crochet/161008,Tunisian crochet,meta_opinion,technical_help,technical_help,technical_help,critique_feedback
+120,4,KnittingHelp,https://forum.knittinghelp.com/t/tunisian-crochet/161008,Tunisian crochet,showcase_reaction,technical_help,technical_help,technical_help,meta_opinion
+121,4,KnittingHelp,https://forum.knittinghelp.com/t/tunisian-crochet/161008,Tunisian crochet,critique_feedback,technical_help,critique_feedback,technical_help,critique_feedback
+122,4,KnittingHelp,https://forum.knittinghelp.com/t/tunisian-crochet/161008,Tunisian crochet,technical_help,technical_help,technical_help,technical_help,meta_opinion
+123,4,KnittingHelp,https://forum.knittinghelp.com/t/tunisian-crochet/161008,Tunisian crochet,meta_opinion,technical_help,technical_help,technical_help,critique_feedback
+124,4,KnittingHelp,https://forum.knittinghelp.com/t/tunisian-crochet/161008,Tunisian crochet,meta_opinion,technical_help,meta_opinion,technical_help,meta_opinion
+125,4,KnittingHelp,https://forum.knittinghelp.com/t/tunisian-crochet/161008,Tunisian crochet,technical_help,technical_help,critique_feedback,technical_help,meta_opinion
+126,4,KnittingHelp,https://forum.knittinghelp.com/t/tunisian-crochet/161008,Tunisian crochet,showcase_reaction,technical_help,technical_help,technical_help,critique_feedback
+127,4,KnittingHelp,https://forum.knittinghelp.com/t/tunisian-crochet/161008,Tunisian crochet,meta_opinion,technical_help,technical_help,technical_help,meta_opinion
+128,4,KnittingHelp,https://forum.knittinghelp.com/t/tunisian-crochet/161008,Tunisian crochet,meta_opinion,technical_help,showcase_reaction,technical_help,meta_opinion
+157,4,WetCanvas,https://www.wetcanvas.com/forums/topic/watercolor-challenge-july-2025/,Watercolor Challenge July 2025,showcase_reaction,technical_help,technical_help,technical_help,critique_feedback
+158,4,WetCanvas,https://www.wetcanvas.com/forums/topic/watercolor-challenge-july-2025/,Watercolor Challenge July 2025,showcase_reaction,technical_help,critique_feedback,technical_help,critique_feedback
+159,4,WetCanvas,https://www.wetcanvas.com/forums/topic/watercolor-challenge-july-2025/,Watercolor Challenge July 2025,showcase_reaction,technical_help,critique_feedback,technical_help,critique_feedback
+160,4,WetCanvas,https://www.wetcanvas.com/forums/topic/watercolor-challenge-july-2025/,Watercolor Challenge July 2025,showcase_reaction,technical_help,showcase_reaction,technical_help,meta_opinion
+161,4,WetCanvas,https://www.wetcanvas.com/forums/topic/watercolor-challenge-july-2025/,Watercolor Challenge July 2025,showcase_reaction,technical_help,meta_opinion,technical_help,meta_opinion
+162,4,WetCanvas,https://www.wetcanvas.com/forums/topic/watercolor-challenge-july-2025/,Watercolor Challenge July 2025,showcase_reaction,technical_help,showcase_reaction,technical_help,critique_feedback
+169,4,WetCanvas,http://www.wetcanvas.com/forums/archive/index.php/t-8620.html,My first attempt at watercolor portrait,critique_feedback,technical_help,technical_help,technical_help,meta_opinion
+170,4,WetCanvas,http://www.wetcanvas.com/forums/archive/index.php/t-8620.html,My first attempt at watercolor portrait,critique_feedback,technical_help,technical_help,technical_help,critique_feedback
+171,4,WetCanvas,http://www.wetcanvas.com/forums/archive/index.php/t-8620.html,My first attempt at watercolor portrait,critique_feedback,technical_help,critique_feedback,technical_help,meta_opinion
+172,4,WetCanvas,http://www.wetcanvas.com/forums/archive/index.php/t-8620.html,My first attempt at watercolor portrait,critique_feedback,technical_help,critique_feedback,technical_help,meta_opinion
+197,4,WetCanvas,https://www.wetcanvas.com/forums/topic/watercolor-challenge-july-2025/,Watercolor Challenge July 2025,showcase_reaction,technical_help,meta_opinion,technical_help,critique_feedback
+198,4,WetCanvas,https://www.wetcanvas.com/forums/topic/watercolor-challenge-july-2025/,Watercolor Challenge July 2025,showcase_reaction,technical_help,technical_help,technical_help,meta_opinion
+199,4,WetCanvas,https://www.wetcanvas.com/forums/topic/watercolor-challenge-july-2025/,Watercolor Challenge July 2025,showcase_reaction,technical_help,technical_help,technical_help,critique_feedback
+200,4,WetCanvas,https://www.wetcanvas.com/forums/topic/watercolor-challenge-july-2025/,Watercolor Challenge July 2025,showcase_reaction,technical_help,technical_help,technical_help,critique_feedback
+211,4,KnittingHelp,https://forum.knittinghelp.com/t/tunisian-crochet/161008,Tunisian crochet,critique_feedback,technical_help,critique_feedback,technical_help,critique_feedback
+1,5,KnittingHelp,https://forum.knittinghelp.com/t/wedding-gift-recently-finished/172319,Wedding gift recently finished,showcase_reaction,technical_help,showcase_reaction,technical_help,meta_opinion
+2,5,KnittingHelp,https://forum.knittinghelp.com/t/wedding-gift-recently-finished/172319,Wedding gift recently finished,showcase_reaction,technical_help,showcase_reaction,technical_help,meta_opinion
+3,5,KnittingHelp,https://forum.knittinghelp.com/t/wedding-gift-recently-finished/172319,Wedding gift recently finished,showcase_reaction,technical_help,technical_help,technical_help,meta_opinion
+4,5,KnittingHelp,https://forum.knittinghelp.com/t/wedding-gift-recently-finished/172319,Wedding gift recently finished,showcase_reaction,technical_help,showcase_reaction,technical_help,critique_feedback
+5,5,KnittingHelp,https://forum.knittinghelp.com/t/wedding-gift-recently-finished/172319,Wedding gift recently finished,meta_opinion,technical_help,showcase_reaction,technical_help,critique_feedback
+6,5,KnittingHelp,https://forum.knittinghelp.com/t/wedding-gift-recently-finished/172319,Wedding gift recently finished,showcase_reaction,technical_help,showcase_reaction,technical_help,showcase_reaction
+7,5,KnittingHelp,https://forum.knittinghelp.com/t/wedding-gift-recently-finished/172319,Wedding gift recently finished,showcase_reaction,technical_help,technical_help,technical_help,critique_feedback
+8,5,KnittingHelp,https://forum.knittinghelp.com/t/wedding-gift-recently-finished/172319,Wedding gift recently finished,showcase_reaction,technical_help,showcase_reaction,technical_help,showcase_reaction
+19,5,KnittingHelp,https://forum.knittinghelp.com/t/crochet-pattern-help/170747,Crochet Pattern Help,technical_help,technical_help,technical_help,technical_help,critique_feedback
+20,5,KnittingHelp,https://forum.knittinghelp.com/t/crochet-pattern-help/170747,Crochet Pattern Help,technical_help,technical_help,showcase_reaction,technical_help,critique_feedback
+21,5,KnittingHelp,https://forum.knittinghelp.com/t/crochet-pattern-help/170747,Crochet Pattern Help,technical_help,technical_help,meta_opinion,technical_help,meta_opinion
+22,5,KnittingHelp,https://forum.knittinghelp.com/t/crochet-pattern-help/170747,Crochet Pattern Help,technical_help,technical_help,technical_help,technical_help,critique_feedback
+23,5,KnittingHelp,https://forum.knittinghelp.com/t/crochet-pattern-help/170747,Crochet Pattern Help,technical_help,technical_help,technical_help,technical_help,critique_feedback
+24,5,KnittingHelp,https://forum.knittinghelp.com/t/crochet-pattern-help/170747,Crochet Pattern Help,meta_opinion,technical_help,critique_feedback,technical_help,meta_opinion
+25,5,KnittingHelp,https://forum.knittinghelp.com/t/crochet-pattern-help/170747,Crochet Pattern Help,technical_help,technical_help,technical_help,technical_help,technical_help
+26,5,KnittingHelp,https://forum.knittinghelp.com/t/crochet-pattern-help/170747,Crochet Pattern Help,technical_help,technical_help,technical_help,technical_help,technical_help
+77,5,KnittingHelp,https://forum.knittinghelp.com/t/stuck-on-a-cable-stitch/165210?page=2,Stuck on a cable stitch page 2,showcase_reaction,technical_help,showcase_reaction,technical_help,technical_help
+78,5,KnittingHelp,https://forum.knittinghelp.com/t/stuck-on-a-cable-stitch/165210?page=2,Stuck on a cable stitch page 2,meta_opinion,technical_help,showcase_reaction,technical_help,meta_opinion
+79,5,KnittingHelp,https://forum.knittinghelp.com/t/shell-baby-blanket-mistake-help/165122,Shell baby blanket mistake help,technical_help,technical_help,meta_opinion,technical_help,meta_opinion
+80,5,KnittingHelp,https://forum.knittinghelp.com/t/shell-baby-blanket-mistake-help/165122,Shell baby blanket mistake help,showcase_reaction,technical_help,technical_help,technical_help,technical_help
+81,5,KnittingHelp,https://forum.knittinghelp.com/t/shell-baby-blanket-mistake-help/165122,Shell baby blanket mistake help,technical_help,technical_help,meta_opinion,technical_help,meta_opinion
+82,5,KnittingHelp,https://forum.knittinghelp.com/t/shell-baby-blanket-mistake-help/165122,Shell baby blanket mistake help,technical_help,technical_help,technical_help,technical_help,meta_opinion
+83,5,KnittingHelp,https://forum.knittinghelp.com/t/shell-baby-blanket-mistake-help/165122,Shell baby blanket mistake help,showcase_reaction,technical_help,critique_feedback,technical_help,critique_feedback
+84,5,KnittingHelp,https://forum.knittinghelp.com/t/shell-baby-blanket-mistake-help/165122,Shell baby blanket mistake help,technical_help,technical_help,critique_feedback,technical_help,critique_feedback
+149,5,WetCanvas,https://www.wetcanvas.com/forums/topic/critique-request-landscape-watercolor/,Critique request: landscape watercolor,critique_feedback,technical_help,technical_help,technical_help,meta_opinion
+150,5,WetCanvas,https://www.wetcanvas.com/forums/topic/critique-request-landscape-watercolor/,Critique request: landscape watercolor,critique_feedback,technical_help,meta_opinion,technical_help,critique_feedback
+151,5,WetCanvas,https://www.wetcanvas.com/forums/topic/critique-request-landscape-watercolor/,Critique request: landscape watercolor,critique_feedback,technical_help,meta_opinion,technical_help,critique_feedback
+152,5,WetCanvas,https://www.wetcanvas.com/forums/topic/critique-request-landscape-watercolor/,Critique request: landscape watercolor,critique_feedback,technical_help,showcase_reaction,technical_help,meta_opinion
+153,5,WetCanvas,https://www.wetcanvas.com/forums/topic/critique-request-landscape-watercolor/,Critique request: landscape watercolor,critique_feedback,technical_help,meta_opinion,technical_help,critique_feedback
+154,5,WetCanvas,https://www.wetcanvas.com/forums/topic/critique-request-landscape-watercolor/,Critique request: landscape watercolor,critique_feedback,technical_help,meta_opinion,technical_help,critique_feedback
+155,5,WetCanvas,https://www.wetcanvas.com/forums/topic/critique-request-landscape-watercolor/,Critique request: landscape watercolor,critique_feedback,technical_help,meta_opinion,technical_help,meta_opinion
+156,5,WetCanvas,https://www.wetcanvas.com/forums/topic/critique-request-landscape-watercolor/,Critique request: landscape watercolor,critique_feedback,technical_help,meta_opinion,technical_help,critique_feedback
+182,5,WetCanvas,https://www.wetcanvas.com/forums/topic/qor-watercolor-vs-mgraham-in-plein-air-and-studio/,QOR watercolor vs MGraham,meta_opinion,technical_help,technical_help,technical_help,meta_opinion
+183,5,WetCanvas,https://www.wetcanvas.com/forums/topic/qor-watercolor-vs-mgraham-in-plein-air-and-studio/,QOR watercolor vs MGraham,meta_opinion,technical_help,technical_help,technical_help,meta_opinion
+184,5,WetCanvas,https://www.wetcanvas.com/forums/topic/qor-watercolor-vs-mgraham-in-plein-air-and-studio/,QOR watercolor vs MGraham,meta_opinion,technical_help,technical_help,technical_help,critique_feedback
+185,5,WetCanvas,https://www.wetcanvas.com/forums/topic/qor-watercolor-vs-mgraham-in-plein-air-and-studio/,QOR watercolor vs MGraham,meta_opinion,technical_help,meta_opinion,technical_help,meta_opinion
+193,5,WetCanvas,https://www.wetcanvas.com/forums/topic/2025-06-24-tuesday-watercolor-practice/,2025 Watercolor Practice thread,technical_help,technical_help,showcase_reaction,technical_help,meta_opinion
+194,5,WetCanvas,https://www.wetcanvas.com/forums/topic/2025-06-24-tuesday-watercolor-practice/,2025 Watercolor Practice thread,technical_help,technical_help,technical_help,technical_help,meta_opinion
+195,5,WetCanvas,https://www.wetcanvas.com/forums/topic/2025-06-24-tuesday-watercolor-practice/,2025 Watercolor Practice thread,technical_help,technical_help,meta_opinion,technical_help,critique_feedback
+196,5,WetCanvas,https://www.wetcanvas.com/forums/topic/2025-06-24-tuesday-watercolor-practice/,2025 Watercolor Practice thread,technical_help,technical_help,showcase_reaction,technical_help,meta_opinion
+205,5,WetCanvas,https://www.wetcanvas.com/forums/topic/qor-watercolor-vs-mgraham-in-plein-air-and-studio/,QOR watercolor vs MGraham,meta_opinion,technical_help,meta_opinion,technical_help,critique_feedback
+209,5,KnittingHelp,https://forum.knittinghelp.com/t/crochet-pattern-help/170747,Crochet Pattern Help,critique_feedback,technical_help,technical_help,technical_help,critique_feedback
