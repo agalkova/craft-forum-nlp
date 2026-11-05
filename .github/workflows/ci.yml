@@ -23,6 +23,6 @@ jobs:
           python -m pip install -r requirements-ci.txt
           python -m pip install --no-deps -e .
       - name: Run tests
-        run: pytest -v
+        run: pytest -v -o addopts=""
       - name: Smoke-test benchmark
         run: craft-forum-benchmark --models majority tfidf --output-dir /tmp/craft-forum-results
