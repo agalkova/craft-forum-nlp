@@ -143,3 +143,7 @@ implementation.
 
 This project began as a CodePath AI201 NLP exercise. The evaluation pipeline and published
 benchmark were subsequently rebuilt to test generalization across unseen source threads.
+
+## Development note
+
+AI coding tools were used during implementation. The repository includes thread-grouped splits, tests, saved predictions, and reproducible evaluation metrics.
