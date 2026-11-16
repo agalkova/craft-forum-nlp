@@ -36,3 +36,32 @@ def test_invalid_ids_are_rejected(tmp_path, ids, message):
 
     with pytest.raises(ValueError, match=message):
         load_data(path)
+
+
+@pytest.mark.parametrize(
+    ("column", "message"),
+    [
+        ("text", "text as a string"),
+        ("source_url", "source URL as a string"),
+    ],
+)
+def test_non_string_fields_are_rejected(tmp_path, column, message):
+    frame = pd.DataFrame(
+        {
+            "id": range(1, 5),
+            "text": [101, 102, 103, 104] if column == "text" else ["text"] * 4,
+            "label": list(LABELS),
+            "source_site": ["site"] * 4,
+            "source_url": (
+                [101, 102, 103, 104]
+                if column == "source_url"
+                else [f"https://example.com/{i}" for i in range(4)]
+            ),
+            "source_context": ["thread"] * 4,
+        }
+    )
+    path = tmp_path / "non-string.csv"
+    frame.to_csv(path, index=False)
+
+    with pytest.raises(ValueError, match=message):
+        load_data(path)

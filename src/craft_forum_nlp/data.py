@@ -31,9 +31,17 @@ def load_data(path: str | Path) -> pd.DataFrame:
         raise ValueError(f"Dataset is missing columns: {sorted(missing)}")
     if frame.empty:
         raise ValueError("Dataset contains no rows")
-    if frame["text"].isna().any() or frame["text"].str.strip().eq("").any():
+    if frame["text"].isna().any():
         raise ValueError("Every row must contain text")
-    if frame["source_url"].isna().any() or frame["source_url"].str.strip().eq("").any():
+    if frame["source_url"].isna().any():
+        raise ValueError("Every row must contain a source URL")
+    if not frame["text"].map(lambda value: isinstance(value, str)).all():
+        raise ValueError("Every row must contain text as a string")
+    if not frame["source_url"].map(lambda value: isinstance(value, str)).all():
+        raise ValueError("Every row must contain a source URL as a string")
+    if frame["text"].str.strip().eq("").any():
+        raise ValueError("Every row must contain text")
+    if frame["source_url"].str.strip().eq("").any():
         raise ValueError("Every row must contain a source URL")
 
     unknown = set(frame["label"]).difference(LABELS)
