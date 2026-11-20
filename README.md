@@ -26,9 +26,9 @@ baseline look competitive even though it never recognizes three of the four clas
 
 Recall by category shows what the two DistilBERT runs are doing. Without class weights it labels every
 excerpt as technical help. With class weights it swings the other way, finding most opinion excerpts
-but only 14% of technical help. TF–IDF is the only model that stays between those extremes.
+but only 14% of technical help. TF-IDF is the only model that stays between those extremes.
 
-![Recall by category for TF–IDF, weighted DistilBERT, and DistilBERT](docs/figures/recall-by-category.svg)
+![Recall by category for TF-IDF, weighted DistilBERT, and DistilBERT](docs/figures/recall-by-category.svg)
 
 Compared with the earlier single-split report, TF–IDF macro F1 increased from 0.310 to 0.363 while
 its accuracy decreased from 0.405 to 0.396. The majority and unweighted DistilBERT results also
