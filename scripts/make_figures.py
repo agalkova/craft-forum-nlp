@@ -1,7 +1,7 @@
 """Draw the evaluation figures from the committed results.
 
 Reads results/fold_metrics.csv, results/metrics.csv and results/per_class_metrics.csv
-and writes SVG figures to docs/figures/ (a wide and a narrow version of each).
+and writes SVG figures to docs/figures/ (a wide and a narrow version, drawn at the pixel width they are shown at).
 
     python scripts/make_figures.py
 """
@@ -41,9 +41,7 @@ def fold_figure(narrow: bool) -> None:
     folds = pd.read_csv(RESULTS / "fold_metrics.csv")
     pooled = pd.read_csv(RESULTS / "metrics.csv").set_index("model")["macro_f1"]
     order = ["tfidf_logistic_regression", "distilbert_weighted", "distilbert", "majority"]
-    fs.apply(narrow)
-    width = fs.NARROW if narrow else fs.WIDE
-    fig = plt.figure(figsize=(width, 4.6 if narrow else 3.9))
+    fig = fs.new_figure(3.9, 4.6)
     left = 0.06 if narrow else 0.3
     axis = fig.add_axes([left, 0.17, 0.88 if narrow else 0.64, 0.62 if narrow else 0.6])
     axis.grid(axis="y", visible=False)
@@ -113,7 +111,7 @@ def fold_figure(narrow: bool) -> None:
         narrow,
     )
     fs.source(fig, "results/fold_metrics.csv", narrow)
-    name = "fold-macro-f1" + ("-narrow" if narrow else "")
+    name = "fold-macro-f1" + fs.suffix()
     fs.save(
         fig,
         OUT / f"{name}.svg",
@@ -127,9 +125,7 @@ def fold_figure(narrow: bool) -> None:
 def recall_figure(narrow: bool) -> None:
     per_class = pd.read_csv(RESULTS / "per_class_metrics.csv")
     models = ["tfidf_logistic_regression", "distilbert_weighted", "distilbert"]
-    fs.apply(narrow)
-    width = fs.NARROW if narrow else fs.WIDE
-    fig = plt.figure(figsize=(width, 6.4 if narrow else 4.4))
+    fig = fs.new_figure(4.4, 6.4)
     left = 0.06 if narrow else 0.25
     axis = fig.add_axes(
         [left, 0.12 if narrow else 0.14, 0.88 if narrow else 0.7, 0.62 if narrow else 0.56]
@@ -205,7 +201,7 @@ def recall_figure(narrow: bool) -> None:
         narrow,
     )
     fs.source(fig, "results/per_class_metrics.csv", narrow)
-    name = "recall-by-category" + ("-narrow" if narrow else "")
+    name = "recall-by-category" + fs.suffix()
     fs.save(
         fig,
         OUT / f"{name}.svg",
@@ -229,7 +225,10 @@ def main() -> None:
     if args.plain:
         fs.PLAIN = True
         OUT = args.plain
-    for narrow in (False, True):
+    variants = ("wide", "mid", "narrow") if args.plain else ("wide", "narrow")
+    for variant in variants:
+        fs.VARIANT = variant
+        narrow = variant != "wide"
         fold_figure(narrow)
         recall_figure(narrow)
 

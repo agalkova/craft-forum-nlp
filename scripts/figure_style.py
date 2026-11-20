@@ -32,13 +32,29 @@ MONO_STACK = "Consolas, Menlo, 'DejaVu Sans Mono', monospace"
 # that already show them as text.
 PLAIN = False
 
-# (width, height) in inches at 100 dpi -> SVG pixels
-WIDE = 8.8
-NARROW = 4.2
+# Figures are drawn at the pixel width they are shown at, so text stays the same
+# size on every screen instead of being scaled with the image.
+WIDTHS = {"wide": 640, "mid": 500, "narrow": 340}
+VARIANT = "wide"
+TEXT_PT = 10.5  # 14 px
+
+
+def suffix() -> str:
+    return "" if VARIANT == "wide" else f"-{VARIANT}"
+
+
+def new_figure(wide_height: float, narrow_height: float):
+    """Figure at the current variant's width; heights are given in inches for an
+    8.8 in (wide) or 4.2 in (narrow) canvas and scaled to keep that aspect ratio."""
+    narrow = VARIANT != "wide"
+    apply(narrow)
+    width = WIDTHS[VARIANT] / 96
+    aspect = (narrow_height / 4.2) if narrow else (wide_height / 8.8)
+    return plt.figure(figsize=(width, width * aspect))
 
 
 def apply(narrow: bool = False) -> None:
-    base = 12.5 if narrow else 12
+    base = TEXT_PT
     plt.rcParams.update(
         {
             "font.family": "DejaVu Sans",
