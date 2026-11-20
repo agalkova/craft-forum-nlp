@@ -52,7 +52,7 @@ L 0 3.5
       </g>
      </g>
      <g id="text_1">
-      <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="158.4" y="286.665773" transform="rotate(-0 158.4 286.665773)">0%</text>
+      <text style="font-size: 11px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="158.4" y="287.805422" transform="rotate(-0 158.4 287.805422)">0%</text>
      </g>
     </g>
     <g id="xtick_2">
@@ -67,7 +67,7 @@ L 259.2 95.04
       </g>
      </g>
      <g id="text_2">
-      <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="259.2" y="286.665773" transform="rotate(-0 259.2 286.665773)">25%</text>
+      <text style="font-size: 11px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="259.2" y="287.805422" transform="rotate(-0 259.2 287.805422)">25%</text>
      </g>
     </g>
     <g id="xtick_3">
@@ -82,7 +82,7 @@ L 360 95.04
       </g>
      </g>
      <g id="text_3">
-      <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="360" y="286.665773" transform="rotate(-0 360 286.665773)">50%</text>
+      <text style="font-size: 11px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="360" y="287.805422" transform="rotate(-0 360 287.805422)">50%</text>
      </g>
     </g>
     <g id="xtick_4">
@@ -97,7 +97,7 @@ L 460.8 95.04
       </g>
      </g>
      <g id="text_4">
-      <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="460.8" y="286.665773" transform="rotate(-0 460.8 286.665773)">75%</text>
+      <text style="font-size: 11px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="460.8" y="287.805422" transform="rotate(-0 460.8 287.805422)">75%</text>
      </g>
     </g>
     <g id="xtick_5">
@@ -112,36 +112,36 @@ L 561.6 95.04
       </g>
      </g>
      <g id="text_5">
-      <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="561.6" y="286.665773" transform="rotate(-0 561.6 286.665773)">100%</text>
+      <text style="font-size: 11px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="561.6" y="287.805422" transform="rotate(-0 561.6 287.805422)">100%</text>
      </g>
     </g>
     <g id="text_6">
-     <text style="font-size: 10.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #43586a" x="380.16" y="300.926359" transform="rotate(-0 380.16 300.926359)">Recall: share of each category the model labeled correctly</text>
+     <text style="font-size: 12px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #43586a" x="380.16" y="303.566125" transform="rotate(-0 380.16 303.566125)">Recall: share of each category the model labeled correctly</text>
     </g>
    </g>
    <g id="matplotlib.axis_2">
     <g id="ytick_1">
      <g id="line2d_11"/>
      <g id="text_7">
-      <text style="font-size: 10.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: end; fill: #1d2b36" x="154.9" y="123.73318" transform="rotate(-0 154.9 123.73318)">Technical help (87)</text>
+      <text style="font-size: 12px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: end; fill: #1d2b36" x="154.9" y="124.303063" transform="rotate(-0 154.9 124.303063)">Technical help (87)</text>
      </g>
     </g>
     <g id="ytick_2">
      <g id="line2d_12"/>
      <g id="text_8">
-      <text style="font-size: 10.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: end; fill: #1d2b36" x="154.9" y="166.399846" transform="rotate(-0 154.9 166.399846)">Showcase reaction (42)</text>
+      <text style="font-size: 12px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: end; fill: #1d2b36" x="154.9" y="166.969729" transform="rotate(-0 154.9 166.969729)">Showcase reaction (42)</text>
      </g>
     </g>
     <g id="ytick_3">
      <g id="line2d_13"/>
      <g id="text_9">
-      <text style="font-size: 10.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: end; fill: #1d2b36" x="154.9" y="209.066513" transform="rotate(-0 154.9 209.066513)">Critique (41)</text>
+      <text style="font-size: 12px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: end; fill: #1d2b36" x="154.9" y="209.636396" transform="rotate(-0 154.9 209.636396)">Critique (41)</text>
      </g>
     </g>
     <g id="ytick_4">
      <g id="line2d_14"/>
      <g id="text_10">
-      <text style="font-size: 10.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: end; fill: #1d2b36" x="154.9" y="251.73318" transform="rotate(-0 154.9 251.73318)">Opinion about the craft (42)</text>
+      <text style="font-size: 12px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: end; fill: #1d2b36" x="154.9" y="252.303063" transform="rotate(-0 154.9 252.303063)">Opinion about the craft (42)</text>
      </g>
     </g>
    </g>
@@ -252,88 +252,88 @@ L 601.92 272.448
 " style="fill: none; stroke: #8f9aa3; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="text_11">
-    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="367.15559" y="110.302125" transform="rotate(-0 367.15559 110.302125)">51%</text>
+    <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="367.15559" y="110.691773" transform="rotate(-0 367.15559 110.691773)">51%</text>
    </g>
    <g id="text_12">
-    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="297.638266" y="152.968792" transform="rotate(-0 297.638266 152.968792)">33%</text>
+    <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="297.638266" y="153.35844" transform="rotate(-0 297.638266 153.35844)">33%</text>
    </g>
    <g id="text_13">
-    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="251.745638" y="195.635458" transform="rotate(-0 251.745638 195.635458)">22%</text>
+    <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="251.745638" y="196.025107" transform="rotate(-0 251.745638 196.025107)">22%</text>
    </g>
    <g id="text_14">
-    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="326.438438" y="238.302125" transform="rotate(-0 326.438438 238.302125)">40%</text>
+    <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="326.438438" y="238.691773" transform="rotate(-0 326.438438 238.691773)">40%</text>
    </g>
    <g id="text_15">
-    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="218.852179" y="121.822125" transform="rotate(-0 218.852179 121.822125)">14%</text>
+    <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="218.852179" y="122.211773" transform="rotate(-0 218.852179 122.211773)">14%</text>
    </g>
    <g id="text_16">
-    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="211.238554" y="164.488792" transform="rotate(-0 211.238554 164.488792)">12%</text>
+    <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="211.238554" y="164.87844" transform="rotate(-0 211.238554 164.87844)">12%</text>
    </g>
    <g id="text_17">
-    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="379.589472" y="207.155458" transform="rotate(-0 379.589472 207.155458)">54%</text>
+    <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="379.589472" y="207.545107" transform="rotate(-0 379.589472 207.545107)">54%</text>
    </g>
    <g id="text_18">
-    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="499.238266" y="249.822125" transform="rotate(-0 499.238266 249.822125)">83%</text>
+    <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="499.238266" y="250.211773" transform="rotate(-0 499.238266 250.211773)">83%</text>
    </g>
    <g id="text_19">
-    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="566.4384" y="133.342125" transform="rotate(-0 566.4384 133.342125)">100%</text>
+    <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="566.4384" y="133.731773" transform="rotate(-0 566.4384 133.731773)">100%</text>
    </g>
    <g id="text_20">
-    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="163.2384" y="176.008792" transform="rotate(-0 163.2384 176.008792)">0%</text>
+    <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="163.2384" y="176.39844" transform="rotate(-0 163.2384 176.39844)">0%</text>
    </g>
    <g id="text_21">
-    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="163.2384" y="218.675458" transform="rotate(-0 163.2384 218.675458)">0%</text>
+    <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="163.2384" y="219.065107" transform="rotate(-0 163.2384 219.065107)">0%</text>
    </g>
    <g id="text_22">
-    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="163.2384" y="261.342125" transform="rotate(-0 163.2384 261.342125)">0%</text>
+    <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="163.2384" y="261.731773" transform="rotate(-0 163.2384 261.731773)">0%</text>
    </g>
    <g id="legend_1">
     <g id="patch_17">
-     <path d="M 166.95 84.207773 
-L 178.35 84.207773 
-L 178.35 77.557773 
-L 166.95 77.557773 
+     <path d="M 168.3 82.497422 
+L 181.5 82.497422 
+L 181.5 74.797422 
+L 168.3 74.797422 
 z
 " style="fill: #0b5dc4"/>
     </g>
     <g id="text_23">
-     <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start" x="185.95" y="84.207773" transform="rotate(-0 185.95 84.207773)">TF-IDF + logistic regression</text>
+     <text style="font-size: 11px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start" x="190.3" y="82.497422" transform="rotate(-0 190.3 82.497422)">TF-IDF + logistic regression</text>
     </g>
     <g id="patch_18">
-     <path d="M 327.786484 84.207773 
-L 339.186484 84.207773 
-L 339.186484 77.557773 
-L 327.786484 77.557773 
+     <path d="M 354.531719 82.497422 
+L 367.731719 82.497422 
+L 367.731719 74.797422 
+L 354.531719 74.797422 
 z
 " style="fill: #d9631e"/>
     </g>
     <g id="text_24">
-     <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start" x="346.786484" y="84.207773" transform="rotate(-0 346.786484 84.207773)">DistilBERT, class-weighted</text>
+     <text style="font-size: 11px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start" x="376.531719" y="82.497422" transform="rotate(-0 376.531719 82.497422)">DistilBERT, class-weighted</text>
     </g>
     <g id="patch_19">
-     <path d="M 483.279219 84.207773 
-L 494.679219 84.207773 
-L 494.679219 77.557773 
-L 483.279219 77.557773 
+     <path d="M 534.575938 82.497422 
+L 547.775938 82.497422 
+L 547.775938 74.797422 
+L 534.575938 74.797422 
 z
 " style="fill: #98a3ab"/>
     </g>
     <g id="text_25">
-     <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start" x="502.279219" y="84.207773" transform="rotate(-0 502.279219 84.207773)">DistilBERT</text>
+     <text style="font-size: 11px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start" x="556.575938" y="82.497422" transform="rotate(-0 556.575938 82.497422)">DistilBERT</text>
     </g>
    </g>
   </g>
   <g id="text_26">
-   <text style="font-weight: 700; font-size: 10px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #0b5dc4" x="22.176" y="19.598437" transform="rotate(-0 22.176 19.598437)">Fig. 2</text>
+   <text style="font-weight: 700; font-size: 11.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #0b5dc4" x="22.176" y="20.738203" transform="rotate(-0 22.176 20.738203)">Fig. 2</text>
   </g>
   <g id="text_27">
-   <text style="font-weight: 700; font-size: 12.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1d2b36" x="22.176" y="37.998047" transform="rotate(-0 22.176 37.998047)">Recall by category</text>
+   <text style="font-weight: 700; font-size: 14px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1d2b36" x="22.176" y="40.637812" transform="rotate(-0 22.176 40.637812)">Recall by category</text>
   </g>
   <g id="text_28">
-   <text style="font-size: 10px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6b7b87" x="22.176" y="55.598437" transform="rotate(-0 22.176 55.598437)">Out-of-fold predictions, 212 excerpts (number in each category in brackets)</text>
+   <text style="font-size: 11.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6b7b87" x="22.176" y="59.738203" transform="rotate(-0 22.176 59.738203)">Out-of-fold predictions, 212 excerpts (number in each category in brackets)</text>
   </g>
   <g id="text_29">
-   <text style="font-size: 8.5px; font-family: Consolas, Menlo, 'DejaVu Sans Mono', monospace; text-anchor: start; fill: #6b7b87" x="22.176" y="310.956408" transform="rotate(-0 22.176 310.956408)">results/per_class_metrics.csv</text>
+   <text style="font-size: 10px; font-family: Consolas, Menlo, 'DejaVu Sans Mono', monospace; text-anchor: start; fill: #6b7b87" x="22.176" y="310.596056" transform="rotate(-0 22.176 310.596056)">results/per_class_metrics.csv</text>
   </g>
  </g>
  <defs>

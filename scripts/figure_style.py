@@ -38,7 +38,7 @@ NARROW = 4.2
 
 
 def apply(narrow: bool = False) -> None:
-    base = 11.5 if narrow else 10.5
+    base = 12.5 if narrow else 12
     plt.rcParams.update(
         {
             "font.family": "DejaVu Sans",

@@ -52,7 +52,7 @@ L 0 3.5
       </g>
      </g>
      <g id="text_1">
-      <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="190.08" y="247.281773" transform="rotate(-0 190.08 247.281773)">0.0</text>
+      <text style="font-size: 11px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="190.08" y="248.421422" transform="rotate(-0 190.08 248.421422)">0.0</text>
      </g>
     </g>
     <g id="xtick_2">
@@ -67,7 +67,7 @@ L 263.808 64.584
       </g>
      </g>
      <g id="text_2">
-      <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="263.808" y="247.281773" transform="rotate(-0 263.808 247.281773)">0.1</text>
+      <text style="font-size: 11px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="263.808" y="248.421422" transform="rotate(-0 263.808 248.421422)">0.1</text>
      </g>
     </g>
     <g id="xtick_3">
@@ -82,7 +82,7 @@ L 337.536 64.584
       </g>
      </g>
      <g id="text_3">
-      <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="337.536" y="247.281773" transform="rotate(-0 337.536 247.281773)">0.2</text>
+      <text style="font-size: 11px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="337.536" y="248.421422" transform="rotate(-0 337.536 248.421422)">0.2</text>
      </g>
     </g>
     <g id="xtick_4">
@@ -97,7 +97,7 @@ L 411.264 64.584
       </g>
      </g>
      <g id="text_4">
-      <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="411.264" y="247.281773" transform="rotate(-0 411.264 247.281773)">0.3</text>
+      <text style="font-size: 11px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="411.264" y="248.421422" transform="rotate(-0 411.264 248.421422)">0.3</text>
      </g>
     </g>
     <g id="xtick_5">
@@ -112,7 +112,7 @@ L 484.992 64.584
       </g>
      </g>
      <g id="text_5">
-      <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="484.992" y="247.281773" transform="rotate(-0 484.992 247.281773)">0.4</text>
+      <text style="font-size: 11px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="484.992" y="248.421422" transform="rotate(-0 484.992 248.421422)">0.4</text>
      </g>
     </g>
     <g id="xtick_6">
@@ -127,36 +127,36 @@ L 558.72 64.584
       </g>
      </g>
      <g id="text_6">
-      <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="558.72" y="247.281773" transform="rotate(-0 558.72 247.281773)">0.5</text>
+      <text style="font-size: 11px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="558.72" y="248.421422" transform="rotate(-0 558.72 248.421422)">0.5</text>
      </g>
     </g>
     <g id="text_7">
-     <text style="font-size: 10.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #43586a" x="392.832" y="261.541539" transform="rotate(-0 392.832 261.541539)">Macro F1</text>
+     <text style="font-size: 12px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #43586a" x="392.832" y="264.181188" transform="rotate(-0 392.832 264.181188)">Macro F1</text>
     </g>
    </g>
    <g id="matplotlib.axis_2">
     <g id="ytick_1">
      <g id="line2d_13"/>
      <g id="text_8">
-      <text style="font-size: 10.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: end; fill: #1d2b36" x="186.58" y="213.544342" transform="rotate(-0 186.58 213.544342)">Majority class</text>
+      <text style="font-size: 12px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: end; fill: #1d2b36" x="186.58" y="214.114225" transform="rotate(-0 186.58 214.114225)">Majority class</text>
      </g>
     </g>
     <g id="ytick_2">
      <g id="line2d_14"/>
      <g id="text_9">
-      <text style="font-size: 10.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: end; fill: #1d2b36" x="186.58" y="174.362947" transform="rotate(-0 186.58 174.362947)">DistilBERT</text>
+      <text style="font-size: 12px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: end; fill: #1d2b36" x="186.58" y="174.93283" transform="rotate(-0 186.58 174.93283)">DistilBERT</text>
      </g>
     </g>
     <g id="ytick_3">
      <g id="line2d_15"/>
      <g id="text_10">
-      <text style="font-size: 10.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: end; fill: #1d2b36" x="186.58" y="135.181552" transform="rotate(-0 186.58 135.181552)">DistilBERT, class-weighted</text>
+      <text style="font-size: 12px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: end; fill: #1d2b36" x="186.58" y="135.751435" transform="rotate(-0 186.58 135.751435)">DistilBERT, class-weighted</text>
      </g>
     </g>
     <g id="ytick_4">
      <g id="line2d_16"/>
      <g id="text_11">
-      <text style="font-size: 10.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: end; fill: #1d2b36" x="186.58" y="96.000156" transform="rotate(-0 186.58 96.000156)">TF-IDF + logistic regression</text>
+      <text style="font-size: 12px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: end; fill: #1d2b36" x="186.58" y="96.570039" transform="rotate(-0 186.58 96.570039)">TF-IDF + logistic regression</text>
      </g>
     </g>
    </g>
@@ -271,7 +271,7 @@ L 458.02156 82.607442
 " clip-path="url(#p68293ad461)" style="fill: none; stroke: #1d2b36; stroke-width: 2; stroke-linecap: round"/>
    </g>
    <g id="text_12">
-    <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="511.335014" y="94.479121" transform="rotate(-0 511.335014 94.479121)">0.363 pooled</text>
+    <text style="font-size: 11px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="511.335014" y="94.868828" transform="rotate(-0 511.335014 94.868828)">0.363 pooled</text>
    </g>
    <g id="line2d_22">
     <path d="M 424.414863 140.595907 
@@ -279,7 +279,7 @@ L 424.414863 121.788837
 " clip-path="url(#p68293ad461)" style="fill: none; stroke: #1d2b36; stroke-width: 2; stroke-linecap: round"/>
    </g>
    <g id="text_13">
-    <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="536.847114" y="133.660517" transform="rotate(-0 536.847114 133.660517)">0.318 pooled</text>
+    <text style="font-size: 11px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="536.847114" y="134.050224" transform="rotate(-0 536.847114 134.050224)">0.318 pooled</text>
    </g>
    <g id="line2d_23">
     <path d="M 297.343181 179.777302 
@@ -287,7 +287,7 @@ L 297.343181 160.970233
 " clip-path="url(#p68293ad461)" style="fill: none; stroke: #1d2b36; stroke-width: 2; stroke-linecap: round"/>
    </g>
    <g id="text_14">
-    <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="319.886991" y="172.841912" transform="rotate(-0 319.886991 172.841912)">0.145 pooled</text>
+    <text style="font-size: 11px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="319.886991" y="173.231619" transform="rotate(-0 319.886991 173.231619)">0.145 pooled</text>
    </g>
    <g id="line2d_24">
     <path d="M 297.343181 218.958698 
@@ -295,20 +295,20 @@ L 297.343181 200.151628
 " clip-path="url(#p68293ad461)" style="fill: none; stroke: #1d2b36; stroke-width: 2; stroke-linecap: round"/>
    </g>
    <g id="text_15">
-    <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="319.886991" y="212.023307" transform="rotate(-0 319.886991 212.023307)">0.145 pooled</text>
+    <text style="font-size: 11px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="319.886991" y="212.413014" transform="rotate(-0 319.886991 212.413014)">0.145 pooled</text>
    </g>
   </g>
   <g id="text_16">
-   <text style="font-weight: 700; font-size: 10px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #0b5dc4" x="22.176" y="19.598437" transform="rotate(-0 22.176 19.598437)">Fig. 1</text>
+   <text style="font-weight: 700; font-size: 11.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #0b5dc4" x="22.176" y="20.738203" transform="rotate(-0 22.176 20.738203)">Fig. 1</text>
   </g>
   <g id="text_17">
-   <text style="font-weight: 700; font-size: 12.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1d2b36" x="22.176" y="37.998047" transform="rotate(-0 22.176 37.998047)">Macro F1 in each of the five folds</text>
+   <text style="font-weight: 700; font-size: 14px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1d2b36" x="22.176" y="40.637812" transform="rotate(-0 22.176 40.637812)">Macro F1 in each of the five folds</text>
   </g>
   <g id="text_18">
-   <text style="font-size: 10px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6b7b87" x="22.176" y="55.598437" transform="rotate(-0 22.176 55.598437)">Dots: one fold each · black tick: pooled out-of-fold score</text>
+   <text style="font-size: 11.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6b7b87" x="22.176" y="59.738203" transform="rotate(-0 22.176 59.738203)">Dots: one fold each · black tick: pooled out-of-fold score</text>
   </g>
   <g id="text_19">
-   <text style="font-size: 8.5px; font-family: Consolas, Menlo, 'DejaVu Sans Mono', monospace; text-anchor: start; fill: #6b7b87" x="22.176" y="275.388408" transform="rotate(-0 22.176 275.388408)">results/fold_metrics.csv</text>
+   <text style="font-size: 10px; font-family: Consolas, Menlo, 'DejaVu Sans Mono', monospace; text-anchor: start; fill: #6b7b87" x="22.176" y="275.028056" transform="rotate(-0 22.176 275.028056)">results/fold_metrics.csv</text>
   </g>
  </g>
  <defs>
