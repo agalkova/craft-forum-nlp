@@ -8,6 +8,7 @@ and writes SVG figures to docs/figures/ (a wide and a narrow version of each).
 
 from __future__ import annotations
 
+import argparse
 import sys
 from pathlib import Path
 
@@ -216,6 +217,18 @@ def recall_figure(narrow: bool) -> None:
 
 
 def main() -> None:
+    global OUT
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser.add_argument(
+        "--plain",
+        type=Path,
+        metavar="DIR",
+        help="write versions without the figure label, title and source line to DIR",
+    )
+    args = parser.parse_args()
+    if args.plain:
+        fs.PLAIN = True
+        OUT = args.plain
     for narrow in (False, True):
         fold_figure(narrow)
         recall_figure(narrow)

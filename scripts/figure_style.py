@@ -28,6 +28,10 @@ SHADE = "#f2efe6"
 FONT_STACK = "Tahoma, Verdana, 'DejaVu Sans', sans-serif"
 MONO_STACK = "Consolas, Menlo, 'DejaVu Sans Mono', monospace"
 
+# Plain figures leave out the figure label, title and source line, for pages
+# that already show them as text.
+PLAIN = False
+
 # (width, height) in inches at 100 dpi -> SVG pixels
 WIDE = 8.8
 NARROW = 4.2
@@ -76,6 +80,8 @@ def apply(narrow: bool = False) -> None:
 
 def header(fig, number: int, title: str, subtitle: str | None = None, narrow: bool = False) -> None:
     """Figure label and a plain, descriptive title, left aligned with the axes."""
+    if PLAIN:
+        return
     x = 0.035 if not narrow else 0.05
     h = fig.get_figheight() * 72
     size = plt.rcParams["font.size"]
@@ -89,6 +95,8 @@ def header(fig, number: int, title: str, subtitle: str | None = None, narrow: bo
 
 
 def source(fig, text: str, narrow: bool = False) -> None:
+    if PLAIN:
+        return
     fig.text(
         0.035 if not narrow else 0.05,
         0.012,
@@ -106,6 +114,8 @@ def save(fig, path: Path, title: str, description: str) -> None:
     fig.savefig(
         path,
         format="svg",
+        bbox_inches="tight" if PLAIN else None,
+        pad_inches=0.06,
         metadata={"Date": None, "Creator": None, "Title": title, "Description": description},
     )
     plt.close(fig)
