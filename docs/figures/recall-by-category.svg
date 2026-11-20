@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg role="img" aria-label="Recall by category for three models. Unweighted DistilBERT labels every excerpt as technical help (100% recall there, 0% elsewhere). Class-weighted DistilBERT swings the other way: 14% on technical help, 83% on opinion. TF-IDF with logistic regression is more even, between 22% and 51% in every category." xmlns:xlink="http://www.w3.org/1999/xlink" width="480pt" height="240pt" viewBox="0 0 480 240" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<svg role="img" aria-label="Recall by category for three models. Unweighted DistilBERT labels every excerpt as technical help (100% recall there, 0% elsewhere). Class-weighted DistilBERT swings the other way: 14% on technical help, 83% on opinion. TF-IDF with logistic regression is more even, between 22% and 51% in every category." xmlns:xlink="http://www.w3.org/1999/xlink" width="555pt" height="277.5pt" viewBox="0 0 555 277.5" xmlns="http://www.w3.org/2000/svg" version="1.1">
  <title>Recall by category for three models</title>
  <metadata>
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
@@ -18,28 +18,28 @@
  </defs>
  <g id="figure_1">
   <g id="patch_1">
-   <path d="M 0 240 
-L 480 240 
-L 480 0 
+   <path d="M 0 277.5 
+L 555 277.5 
+L 555 0 
 L 0 0 
 z
 " style="fill: #ffffff"/>
   </g>
   <g id="axes_1">
    <g id="patch_2">
-    <path d="M 120 206.4 
-L 456 206.4 
-L 456 72 
-L 120 72 
+    <path d="M 138.75 238.65 
+L 527.25 238.65 
+L 527.25 83.25 
+L 138.75 83.25 
 z
 " style="fill: #ffffff"/>
    </g>
    <g id="matplotlib.axis_1">
     <g id="xtick_1">
      <g id="line2d_1">
-      <path d="M 120 206.4 
-L 120 72 
-" clip-path="url(#p187323921f)" style="fill: none; stroke-dasharray: 0.8,1.6; stroke-dashoffset: 0; stroke: #dcd8cc; stroke-width: 0.8"/>
+      <path d="M 138.75 238.65 
+L 138.75 83.25 
+" clip-path="url(#p2307bac8ef)" style="fill: none; stroke-dasharray: 0.8,1.6; stroke-dashoffset: 0; stroke: #dcd8cc; stroke-width: 0.8"/>
      </g>
      <g id="line2d_2">
       <defs>
@@ -48,297 +48,297 @@ L 0 3.5
 " style="stroke: #6b7b87; stroke-width: 0.8"/>
       </defs>
       <g>
-       <use xlink:href="#m2d4528c1ce" x="120" y="206.4" style="fill: #6b7b87; stroke: #6b7b87; stroke-width: 0.8"/>
+       <use xlink:href="#m2d4528c1ce" x="138.75" y="238.65" style="fill: #6b7b87; stroke: #6b7b87; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_1">
-      <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="120" y="220.617773" transform="rotate(-0 120 220.617773)">0%</text>
+      <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="138.75" y="252.867773" transform="rotate(-0 138.75 252.867773)">0%</text>
      </g>
     </g>
     <g id="xtick_2">
      <g id="line2d_3">
-      <path d="M 196.363636 206.4 
-L 196.363636 72 
-" clip-path="url(#p187323921f)" style="fill: none; stroke-dasharray: 0.8,1.6; stroke-dashoffset: 0; stroke: #dcd8cc; stroke-width: 0.8"/>
+      <path d="M 227.045455 238.65 
+L 227.045455 83.25 
+" clip-path="url(#p2307bac8ef)" style="fill: none; stroke-dasharray: 0.8,1.6; stroke-dashoffset: 0; stroke: #dcd8cc; stroke-width: 0.8"/>
      </g>
      <g id="line2d_4">
       <g>
-       <use xlink:href="#m2d4528c1ce" x="196.363636" y="206.4" style="fill: #6b7b87; stroke: #6b7b87; stroke-width: 0.8"/>
+       <use xlink:href="#m2d4528c1ce" x="227.045455" y="238.65" style="fill: #6b7b87; stroke: #6b7b87; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_2">
-      <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="196.363636" y="220.617773" transform="rotate(-0 196.363636 220.617773)">25%</text>
+      <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="227.045455" y="252.867773" transform="rotate(-0 227.045455 252.867773)">25%</text>
      </g>
     </g>
     <g id="xtick_3">
      <g id="line2d_5">
-      <path d="M 272.727273 206.4 
-L 272.727273 72 
-" clip-path="url(#p187323921f)" style="fill: none; stroke-dasharray: 0.8,1.6; stroke-dashoffset: 0; stroke: #dcd8cc; stroke-width: 0.8"/>
+      <path d="M 315.340909 238.65 
+L 315.340909 83.25 
+" clip-path="url(#p2307bac8ef)" style="fill: none; stroke-dasharray: 0.8,1.6; stroke-dashoffset: 0; stroke: #dcd8cc; stroke-width: 0.8"/>
      </g>
      <g id="line2d_6">
       <g>
-       <use xlink:href="#m2d4528c1ce" x="272.727273" y="206.4" style="fill: #6b7b87; stroke: #6b7b87; stroke-width: 0.8"/>
+       <use xlink:href="#m2d4528c1ce" x="315.340909" y="238.65" style="fill: #6b7b87; stroke: #6b7b87; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_3">
-      <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="272.727273" y="220.617773" transform="rotate(-0 272.727273 220.617773)">50%</text>
+      <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="315.340909" y="252.867773" transform="rotate(-0 315.340909 252.867773)">50%</text>
      </g>
     </g>
     <g id="xtick_4">
      <g id="line2d_7">
-      <path d="M 349.090909 206.4 
-L 349.090909 72 
-" clip-path="url(#p187323921f)" style="fill: none; stroke-dasharray: 0.8,1.6; stroke-dashoffset: 0; stroke: #dcd8cc; stroke-width: 0.8"/>
+      <path d="M 403.636364 238.65 
+L 403.636364 83.25 
+" clip-path="url(#p2307bac8ef)" style="fill: none; stroke-dasharray: 0.8,1.6; stroke-dashoffset: 0; stroke: #dcd8cc; stroke-width: 0.8"/>
      </g>
      <g id="line2d_8">
       <g>
-       <use xlink:href="#m2d4528c1ce" x="349.090909" y="206.4" style="fill: #6b7b87; stroke: #6b7b87; stroke-width: 0.8"/>
+       <use xlink:href="#m2d4528c1ce" x="403.636364" y="238.65" style="fill: #6b7b87; stroke: #6b7b87; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_4">
-      <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="349.090909" y="220.617773" transform="rotate(-0 349.090909 220.617773)">75%</text>
+      <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="403.636364" y="252.867773" transform="rotate(-0 403.636364 252.867773)">75%</text>
      </g>
     </g>
     <g id="xtick_5">
      <g id="line2d_9">
-      <path d="M 425.454545 206.4 
-L 425.454545 72 
-" clip-path="url(#p187323921f)" style="fill: none; stroke-dasharray: 0.8,1.6; stroke-dashoffset: 0; stroke: #dcd8cc; stroke-width: 0.8"/>
+      <path d="M 491.931818 238.65 
+L 491.931818 83.25 
+" clip-path="url(#p2307bac8ef)" style="fill: none; stroke-dasharray: 0.8,1.6; stroke-dashoffset: 0; stroke: #dcd8cc; stroke-width: 0.8"/>
      </g>
      <g id="line2d_10">
       <g>
-       <use xlink:href="#m2d4528c1ce" x="425.454545" y="206.4" style="fill: #6b7b87; stroke: #6b7b87; stroke-width: 0.8"/>
+       <use xlink:href="#m2d4528c1ce" x="491.931818" y="238.65" style="fill: #6b7b87; stroke: #6b7b87; stroke-width: 0.8"/>
       </g>
      </g>
      <g id="text_5">
-      <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="425.454545" y="220.617773" transform="rotate(-0 425.454545 220.617773)">100%</text>
+      <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #6b7b87" x="491.931818" y="252.867773" transform="rotate(-0 491.931818 252.867773)">100%</text>
      </g>
     </g>
     <g id="text_6">
-     <text style="font-size: 10.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #43586a" x="288" y="234.878359" transform="rotate(-0 288 234.878359)">Recall: share of each category the model labeled correctly</text>
+     <text style="font-size: 10.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: middle; fill: #43586a" x="333" y="267.128359" transform="rotate(-0 333 267.128359)">Recall: share of each category the model labeled correctly</text>
     </g>
    </g>
    <g id="matplotlib.axis_2">
     <g id="ytick_1">
      <g id="line2d_11"/>
      <g id="text_7">
-      <text style="font-size: 10.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: end; fill: #1d2b36" x="116.5" y="94.704331" transform="rotate(-0 116.5 94.704331)">Technical help (87)</text>
+      <text style="font-size: 10.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: end; fill: #1d2b36" x="135.25" y="108.878574" transform="rotate(-0 135.25 108.878574)">Technical help (87)</text>
      </g>
     </g>
     <g id="ytick_2">
      <g id="line2d_12"/>
      <g id="text_8">
-      <text style="font-size: 10.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: end; fill: #1d2b36" x="116.5" y="127.027564" transform="rotate(-0 116.5 127.027564)">Showcase reaction (42)</text>
+      <text style="font-size: 10.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: end; fill: #1d2b36" x="135.25" y="146.252311" transform="rotate(-0 135.25 146.252311)">Showcase reaction (42)</text>
      </g>
     </g>
     <g id="ytick_3">
      <g id="line2d_13"/>
      <g id="text_9">
-      <text style="font-size: 10.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: end; fill: #1d2b36" x="116.5" y="159.350796" transform="rotate(-0 116.5 159.350796)">Critique (41)</text>
+      <text style="font-size: 10.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: end; fill: #1d2b36" x="135.25" y="183.626048" transform="rotate(-0 135.25 183.626048)">Critique (41)</text>
      </g>
     </g>
     <g id="ytick_4">
      <g id="line2d_14"/>
      <g id="text_10">
-      <text style="font-size: 10.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: end; fill: #1d2b36" x="116.5" y="191.674028" transform="rotate(-0 116.5 191.674028)">Opinion about the craft (42)</text>
+      <text style="font-size: 10.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: end; fill: #1d2b36" x="135.25" y="220.999786" transform="rotate(-0 135.25 220.999786)">Opinion about the craft (42)</text>
      </g>
     </g>
    </g>
    <g id="patch_3">
-    <path d="M 120 85.866667 
-L 274.48272 85.866667 
-L 274.48272 78.109091 
-L 120 78.109091 
+    <path d="M 138.75 99.283333 
+L 317.370645 99.283333 
+L 317.370645 90.313636 
+L 138.75 90.313636 
 z
-" clip-path="url(#p187323921f)" style="fill: #0b5dc4"/>
+" clip-path="url(#p2307bac8ef)" style="fill: #0b5dc4"/>
    </g>
    <g id="patch_4">
-    <path d="M 120 118.189899 
-L 221.81808 118.189899 
-L 221.81808 110.432323 
-L 120 110.432323 
+    <path d="M 138.75 136.657071 
+L 256.477155 136.657071 
+L 256.477155 127.687374 
+L 138.75 127.687374 
 z
-" clip-path="url(#p187323921f)" style="fill: #0b5dc4"/>
+" clip-path="url(#p2307bac8ef)" style="fill: #0b5dc4"/>
    </g>
    <g id="patch_5">
-    <path d="M 120 150.513131 
-L 187.050938 150.513131 
-L 187.050938 142.755556 
-L 120 142.755556 
+    <path d="M 138.75 174.030808 
+L 216.277647 174.030808 
+L 216.277647 165.061111 
+L 138.75 165.061111 
 z
-" clip-path="url(#p187323921f)" style="fill: #0b5dc4"/>
+" clip-path="url(#p2307bac8ef)" style="fill: #0b5dc4"/>
    </g>
    <g id="patch_6">
-    <path d="M 120 182.836364 
-L 243.636393 182.836364 
-L 243.636393 175.078788 
-L 120 175.078788 
+    <path d="M 138.75 211.404545 
+L 281.704579 211.404545 
+L 281.704579 202.434848 
+L 138.75 202.434848 
 z
-" clip-path="url(#p187323921f)" style="fill: #0b5dc4"/>
+" clip-path="url(#p2307bac8ef)" style="fill: #0b5dc4"/>
    </g>
    <g id="patch_7">
-    <path d="M 120 94.593939 
-L 162.131651 94.593939 
-L 162.131651 86.836364 
-L 120 86.836364 
+    <path d="M 138.75 109.374242 
+L 187.464721 109.374242 
+L 187.464721 100.404545 
+L 138.75 100.404545 
 z
-" clip-path="url(#p187323921f)" style="fill: #d9631e"/>
+" clip-path="url(#p2307bac8ef)" style="fill: #d9631e"/>
    </g>
    <g id="patch_8">
-    <path d="M 120 126.917172 
-L 156.363753 126.917172 
-L 156.363753 119.159596 
-L 120 119.159596 
+    <path d="M 138.75 146.74798 
+L 180.795589 146.74798 
+L 180.795589 137.778283 
+L 138.75 137.778283 
 z
-" clip-path="url(#p187323921f)" style="fill: #d9631e"/>
+" clip-path="url(#p2307bac8ef)" style="fill: #d9631e"/>
    </g>
    <g id="patch_9">
-    <path d="M 120 159.240404 
-L 283.902327 159.240404 
-L 283.902327 151.482828 
-L 120 151.482828 
+    <path d="M 138.75 184.121717 
+L 328.262066 184.121717 
+L 328.262066 175.15202 
+L 138.75 175.15202 
 z
-" clip-path="url(#p187323921f)" style="fill: #d9631e"/>
+" clip-path="url(#p2307bac8ef)" style="fill: #d9631e"/>
    </g>
    <g id="patch_10">
-    <path d="M 120 191.563636 
-L 374.545353 191.563636 
-L 374.545353 183.806061 
-L 120 183.806061 
+    <path d="M 138.75 221.495455 
+L 433.068064 221.495455 
+L 433.068064 212.525758 
+L 138.75 212.525758 
 z
-" clip-path="url(#p187323921f)" style="fill: #d9631e"/>
+" clip-path="url(#p2307bac8ef)" style="fill: #d9631e"/>
    </g>
    <g id="patch_11">
-    <path d="M 120 103.321212 
-L 425.454545 103.321212 
-L 425.454545 95.563636 
-L 120 95.563636 
+    <path d="M 138.75 119.465152 
+L 491.931818 119.465152 
+L 491.931818 110.495455 
+L 138.75 110.495455 
 z
-" clip-path="url(#p187323921f)" style="fill: #98a3ab"/>
+" clip-path="url(#p2307bac8ef)" style="fill: #98a3ab"/>
    </g>
    <g id="patch_12">
-    <path d="M 120 135.644444 
-L 120 135.644444 
-L 120 127.886869 
-L 120 127.886869 
+    <path d="M 138.75 156.838889 
+L 138.75 156.838889 
+L 138.75 147.869192 
+L 138.75 147.869192 
 z
-" clip-path="url(#p187323921f)" style="fill: #98a3ab"/>
+" clip-path="url(#p2307bac8ef)" style="fill: #98a3ab"/>
    </g>
    <g id="patch_13">
-    <path d="M 120 167.967677 
-L 120 167.967677 
-L 120 160.210101 
-L 120 160.210101 
+    <path d="M 138.75 194.212626 
+L 138.75 194.212626 
+L 138.75 185.242929 
+L 138.75 185.242929 
 z
-" clip-path="url(#p187323921f)" style="fill: #98a3ab"/>
+" clip-path="url(#p2307bac8ef)" style="fill: #98a3ab"/>
    </g>
    <g id="patch_14">
-    <path d="M 120 200.290909 
-L 120 200.290909 
-L 120 192.533333 
-L 120 192.533333 
+    <path d="M 138.75 231.586364 
+L 138.75 231.586364 
+L 138.75 222.616667 
+L 138.75 222.616667 
 z
-" clip-path="url(#p187323921f)" style="fill: #98a3ab"/>
+" clip-path="url(#p2307bac8ef)" style="fill: #98a3ab"/>
    </g>
    <g id="patch_15">
-    <path d="M 120 206.4 
-L 120 72 
+    <path d="M 138.75 238.65 
+L 138.75 83.25 
 " style="fill: none; stroke: #8f9aa3; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="patch_16">
-    <path d="M 120 206.4 
-L 456 206.4 
+    <path d="M 138.75 238.65 
+L 527.25 238.65 
 " style="fill: none; stroke: #8f9aa3; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
    </g>
    <g id="text_11">
-    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="278.148175" y="84.066004" transform="rotate(-0 278.148175 84.066004)">51%</text>
+    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="321.608827" y="96.87661" transform="rotate(-0 321.608827 96.87661)">51%</text>
    </g>
    <g id="text_12">
-    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="225.483535" y="116.389236" transform="rotate(-0 225.483535 116.389236)">33%</text>
+    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="260.715337" y="134.250347" transform="rotate(-0 260.715337 134.250347)">33%</text>
    </g>
    <g id="text_13">
-    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="190.716393" y="148.712468" transform="rotate(-0 190.716393 148.712468)">22%</text>
+    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="220.515829" y="171.624085" transform="rotate(-0 220.515829 171.624085)">22%</text>
    </g>
    <g id="text_14">
-    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="247.301847" y="181.035701" transform="rotate(-0 247.301847 181.035701)">40%</text>
+    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="285.942761" y="208.997822" transform="rotate(-0 285.942761 208.997822)">40%</text>
    </g>
    <g id="text_15">
-    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="165.797105" y="92.793277" transform="rotate(-0 165.797105 92.793277)">14%</text>
+    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="191.702903" y="106.967519" transform="rotate(-0 191.702903 106.967519)">14%</text>
    </g>
    <g id="text_16">
-    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="160.029207" y="125.116509" transform="rotate(-0 160.029207 125.116509)">12%</text>
+    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="185.033771" y="144.341256" transform="rotate(-0 185.033771 144.341256)">12%</text>
    </g>
    <g id="text_17">
-    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="287.567782" y="157.439741" transform="rotate(-0 287.567782 157.439741)">54%</text>
+    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="332.500248" y="181.714994" transform="rotate(-0 332.500248 181.714994)">54%</text>
    </g>
    <g id="text_18">
-    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="378.210807" y="189.762973" transform="rotate(-0 378.210807 189.762973)">83%</text>
+    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="437.306246" y="219.088731" transform="rotate(-0 437.306246 219.088731)">83%</text>
    </g>
    <g id="text_19">
-    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="429.12" y="101.520549" transform="rotate(-0 429.12 101.520549)">100%</text>
+    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="496.17" y="117.058428" transform="rotate(-0 496.17 117.058428)">100%</text>
    </g>
    <g id="text_20">
-    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="123.665455" y="133.843782" transform="rotate(-0 123.665455 133.843782)">0%</text>
+    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="142.988182" y="154.432165" transform="rotate(-0 142.988182 154.432165)">0%</text>
    </g>
    <g id="text_21">
-    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="123.665455" y="166.167014" transform="rotate(-0 123.665455 166.167014)">0%</text>
+    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="142.988182" y="191.805903" transform="rotate(-0 142.988182 191.805903)">0%</text>
    </g>
    <g id="text_22">
-    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="123.665455" y="198.490246" transform="rotate(-0 123.665455 198.490246)">0%</text>
+    <text style="font-size: 8px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #43586a" x="142.988182" y="229.17964" transform="rotate(-0 142.988182 229.17964)">0%</text>
    </g>
    <g id="legend_1">
     <g id="patch_17">
-     <path d="M 128.55 61.167773 
-L 139.95 61.167773 
-L 139.95 54.517773 
-L 128.55 54.517773 
+     <path d="M 147.3 72.417773 
+L 158.7 72.417773 
+L 158.7 65.767773 
+L 147.3 65.767773 
 z
 " style="fill: #0b5dc4"/>
     </g>
     <g id="text_23">
-     <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start" x="147.55" y="61.167773" transform="rotate(-0 147.55 61.167773)">TF-IDF + logistic regression</text>
+     <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start" x="166.3" y="72.417773" transform="rotate(-0 166.3 72.417773)">TF-IDF + logistic regression</text>
     </g>
     <g id="patch_18">
-     <path d="M 289.386484 61.167773 
-L 300.786484 61.167773 
-L 300.786484 54.517773 
-L 289.386484 54.517773 
+     <path d="M 308.136484 72.417773 
+L 319.536484 72.417773 
+L 319.536484 65.767773 
+L 308.136484 65.767773 
 z
 " style="fill: #d9631e"/>
     </g>
     <g id="text_24">
-     <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start" x="308.386484" y="61.167773" transform="rotate(-0 308.386484 61.167773)">DistilBERT, class-weighted</text>
+     <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start" x="327.136484" y="72.417773" transform="rotate(-0 327.136484 72.417773)">DistilBERT, class-weighted</text>
     </g>
     <g id="patch_19">
-     <path d="M 444.879219 61.167773 
-L 456.279219 61.167773 
-L 456.279219 54.517773 
-L 444.879219 54.517773 
+     <path d="M 463.629219 72.417773 
+L 475.029219 72.417773 
+L 475.029219 65.767773 
+L 463.629219 65.767773 
 z
 " style="fill: #98a3ab"/>
     </g>
     <g id="text_25">
-     <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start" x="463.879219" y="61.167773" transform="rotate(-0 463.879219 61.167773)">DistilBERT</text>
+     <text style="font-size: 9.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start" x="482.629219" y="72.417773" transform="rotate(-0 482.629219 72.417773)">DistilBERT</text>
     </g>
    </g>
   </g>
   <g id="text_26">
-   <text style="font-weight: 700; font-size: 10px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #0b5dc4" x="16.8" y="19.598437" transform="rotate(-0 16.8 19.598437)">Fig. 2</text>
+   <text style="font-weight: 700; font-size: 10px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #0b5dc4" x="19.425" y="19.598437" transform="rotate(-0 19.425 19.598437)">Fig. 2</text>
   </g>
   <g id="text_27">
-   <text style="font-weight: 700; font-size: 12.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1d2b36" x="16.8" y="37.998047" transform="rotate(-0 16.8 37.998047)">Recall by category</text>
+   <text style="font-weight: 700; font-size: 12.5px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #1d2b36" x="19.425" y="37.998047" transform="rotate(-0 19.425 37.998047)">Recall by category</text>
   </g>
   <g id="text_28">
-   <text style="font-size: 10px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6b7b87" x="16.8" y="55.598438" transform="rotate(-0 16.8 55.598438)">Out-of-fold predictions, 212 excerpts (number in each category in brackets)</text>
+   <text style="font-size: 10px; font-family: Tahoma, Verdana, 'DejaVu Sans', sans-serif; text-anchor: start; fill: #6b7b87" x="19.425" y="55.598437" transform="rotate(-0 19.425 55.598437)">Out-of-fold predictions, 212 excerpts (number in each category in brackets)</text>
   </g>
   <g id="text_29">
-   <text style="font-size: 8.5px; font-family: Consolas, Menlo, 'DejaVu Sans Mono', monospace; text-anchor: start; fill: #6b7b87" x="16.8" y="235.078008" transform="rotate(-0 16.8 235.078008)">results/per_class_metrics.csv</text>
+   <text style="font-size: 8.5px; font-family: Consolas, Menlo, 'DejaVu Sans Mono', monospace; text-anchor: start; fill: #6b7b87" x="19.425" y="272.128008" transform="rotate(-0 19.425 272.128008)">results/per_class_metrics.csv</text>
   </g>
  </g>
  <defs>
-  <clipPath id="p187323921f">
-   <rect x="120" y="72" width="336" height="134.4"/>
+  <clipPath id="p2307bac8ef">
+   <rect x="138.75" y="83.25" width="388.5" height="155.4"/>
   </clipPath>
  </defs>
 </svg>

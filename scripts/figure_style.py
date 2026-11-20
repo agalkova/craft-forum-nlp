@@ -34,7 +34,7 @@ PLAIN = False
 
 # Figures are drawn at the pixel width they are shown at, so text stays the same
 # size on every screen instead of being scaled with the image.
-WIDTHS = {"wide": 640, "mid": 500, "narrow": 340}
+WIDTHS = {"wide": 740, "mid": 500, "narrow": 340}
 VARIANT = "wide"
 TEXT_PT = 10.5  # 14 px
 
