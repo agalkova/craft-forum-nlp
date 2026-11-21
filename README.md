@@ -12,7 +12,7 @@ TF–IDF with class-balanced logistic regression achieved **0.363 pooled out-of-
 five-fold thread-grouped cross-validation. Its fold scores ranged from 0.303 to 0.424, which is a
 material amount of variation and a reason not to rely on one small held-out set.
 
-![Pooled out-of-fold macro F1 comparison](results/model_comparison.png)
+![Macro F1 in each of the five folds, with the pooled score](docs/figures/fold-macro-f1.svg)
 
 | Model | Pooled accuracy | Pooled macro F1 | Fold macro F1 range |
 |---|---:|---:|---:|
@@ -23,6 +23,12 @@ material amount of variation and a reason not to rely on one small held-out set.
 
 Macro F1 is the primary metric because the four labels are imbalanced. Accuracy makes the majority
 baseline look competitive even though it never recognizes three of the four classes.
+
+Recall by category shows what the two DistilBERT runs are doing. Without class weights it labels every
+excerpt as technical help. With class weights it swings the other way, finding most opinion excerpts
+but only 14% of technical help. TF-IDF is the only model that stays between those extremes.
+
+![Recall by category for TF-IDF, weighted DistilBERT, and DistilBERT](docs/figures/recall-by-category.svg)
 
 Compared with the earlier single-split report, TF–IDF macro F1 increased from 0.310 to 0.363 while
 its accuracy decreased from 0.405 to 0.396. The majority and unweighted DistilBERT results also
@@ -110,6 +116,12 @@ python -m pip install -r requirements-ci.txt
 python -m pip install --no-deps -e .
 craft-forum-benchmark --models majority tfidf --output-dir /tmp/craft-forum-results
 pytest
+~~~
+
+To redraw the figures in `docs/figures/` from the tracked results:
+
+~~~bash
+python scripts/make_figures.py
 ~~~
 
 The tracked [results directory](results/) contains the fold assignments, per-excerpt out-of-fold
